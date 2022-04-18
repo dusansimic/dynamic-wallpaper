@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/me/dusansimic/DynamicWallpaper">
+    <file>window.ui</file>
+    <file>preferences.ui</file>
+    <file>wallpaper_picker.ui</file>
+    <file>gtk/help-overlay.ui</file>
+  </gresource>
+</gresources>

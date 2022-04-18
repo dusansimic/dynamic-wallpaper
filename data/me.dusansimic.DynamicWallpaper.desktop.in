@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=dynamic-wallpaper
+Exec=dynamic-wallpaper
+Icon=me.dusansimic.DynamicWallpaper
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true
