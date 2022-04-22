@@ -24,7 +24,6 @@ gi.require_version('Adw', '1')
 
 from gi.repository import Gtk, Gio, Adw
 from .window import DynamicWallpaperWindow, AboutDialog
-from .preferences import PreferencesDialog
 
 
 class Dynamic_wallpaperApplication(Adw.Application):
@@ -36,7 +35,6 @@ class Dynamic_wallpaperApplication(Adw.Application):
                          flags=Gio.ApplicationFlags.FLAGS_NONE)
         self.create_action('quit', self.quit, ['<primary>q'])
         self.create_action('about', self.on_about_action)
-        self.create_action('preferences', self.on_preferences_action)
 
     def do_activate(self):
         """Called when the application is activated.
@@ -53,12 +51,6 @@ class Dynamic_wallpaperApplication(Adw.Application):
         """Callback for the app.about action."""
         about = AboutDialog(self.props.active_window)
         about.present()
-
-    def on_preferences_action(self, widget, _):
-        """Callback for the app.preferences action."""
-        print('app.preferences action activated')
-        preferences = PreferencesDialog(self.props.active_window)
-        preferences.present()
 
     def create_action(self, name, callback, shortcuts=None):
         """Add an application action.

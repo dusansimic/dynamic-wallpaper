@@ -1,33 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
   <requires lib="gtk" version="4.0"/>
-  <template class="WallpaperPicker" parent="GtkBox">
+  <requires lib="adw" version="1.0"/>
+  <template class="WallpaperPicker" parent="AdwBin">
     <child>
-      <object class="GtkButton" id="select_button">
-        <property name="action_name">win.open</property>
-        <property name="visible">False</property>
-        <property name="child">
-          <object class="AdwButtonContent">
-            <property name="icon-name">document-open-symbolic</property>
-            <property name="label" translatable="yes">_Open light wallpaper</property>
-            <property name="use-underline">True</property>
-          </object>
-        </property>
-      </object>
-    </child>
-    <child>
-      <object class="AdwActionRow" id="action_row">
-        <property name="title">image.png</property>
-        <property name="activatable-widget">remove-image_action</property>
+      <object class="GtkBox">
         <child>
-          <object class="GtkButton" id="remove-image_action">
-            <property name="name">remove-image</property>
+          <object class="GtkButton" id="picker_button">
             <property name="valign">center</property>
-            <property name="icon-name">edit-delete-symbolic</property>
-            <signal name="clicked" handler="_remove_image"/>
+            <property name="child">
+              <object class="AdwButtonContent" id="picker_button_content">
+                <property name="icon-name">document-open-symbolic</property>
+                <property name="label" translatable="yes">_Select wallpaper</property>
+                <property name="use-underline">True</property>
+              </object>
+            </property>
+          </object>
+        </child>
+        <child>
+          <object class="AdwActionRow" id="wallpaper_action_row">
+            <child>
+              <object class="GtkButton" id="delete_button">
+                <property name="icon-name">edit-delete-symbolic</property>
+                <property name="valign">center</property>
+              </object>
+            </child>
           </object>
         </child>
       </object>
     </child>
   </template>
 </interface>
+

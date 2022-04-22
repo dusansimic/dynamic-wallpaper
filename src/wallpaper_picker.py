@@ -1,18 +1,94 @@
-from gi.repository import Gtk
+from gi.repository import Gtk, Adw, Gio
+import os
+import uuid
 
 @Gtk.Template(resource_path='/me/dusansimic/DynamicWallpaper/wallpaper_picker.ui')
-class WallpaperPicker(Gtk.Box):
-    __gtype_name__ = 'WallpaperPicker'
+class WallpaperPicker(Adw.Bin):
+  __gtype_name__ = 'WallpaperPicker'
 
-    image = None
+  wallpaper = None
 
-    def __init__(self):
-        Gtk.Box.__init__(self)
-        #select_button = Gtk.Template.Child()
-        #action_row = Gtk.Template.Child()
-        #print(select_button)
-        #select_button.set_visible(True)
-        #action_row.set_visible(False)
+  picker_button = Gtk.Template.Child()
+  picker_button_content = Gtk.Template.Child()
+  wallpaper_action_row = Gtk.Template.Child()
+  delete_button = Gtk.Template.Child()
 
-    def _remove_image(self):
-        print('removing image')
+  def __init__(self, parent, label, uid = None):
+    Adw.Bin.__init__(self)
+
+    self._uid = uuid.uuid4() if uid == None else uid
+
+    self.picker_button.set_action_name('win.{}_open'.format(self._uid))
+    self.delete_button.set_action_name('win.{}_delete'.format(self._uid))
+    self.picker_button_content.set_label(label)
+
+    self._update_state()
+    self._setup_actions(parent)
+
+    images_filter = Gtk.FileFilter()
+    images_filter.set_name(_('PNG & JPEG'))
+    images_filter.add_mime_type('image/png')
+    images_filter.add_mime_type('image/jpeg')
+
+    self.wallpaper_chooser = Gtk.FileChooserNative.new(
+      _('Select wallpaper'),
+      parent,
+      Gtk.FileChooserAction.OPEN,
+      None,
+      None,
+    )
+    self.wallpaper_chooser.set_filter(images_filter)
+    self.wallpaper_chooser.set_select_multiple(False)
+    self.wallpaper_chooser.connect('response', self._on_wallpaper_chooser_response)
+
+  def _setup_actions(self, parent):
+    open_action = Gio.SimpleAction.new('{}_open'.format(self._uid), None)
+    open_action.connect('activate', self._on_open_action)
+    parent.add_action(open_action)
+
+    delete_action = Gio.SimpleAction.new('{}_delete'.format(self._uid), None)
+    delete_action.connect('activate', self._on_delete_action)
+    parent.add_action(delete_action)
+
+  def _update_state(self):
+    self.picker_button.set_visible(bool(not self.wallpaper))
+    self.wallpaper_action_row.set_visible(bool(self.wallpaper))
+
+  def _update_action_row_labels(self):
+    self.wallpaper_action_row.set_title(self.wallpaper.filename)
+    size = os.path.getsize(self.wallpaper.path)
+    self.wallpaper_action_row.set_subtitle(self._humanize(size))
+
+  def _on_open_action(self, _action, _param):
+    self.wallpaper_chooser.show()
+
+  def _on_wallpaper_chooser_response(self, dialog, response):
+    dialog.hide()
+    if response == Gtk.ResponseType.ACCEPT:
+      files = dialog.get_files()
+      if files:
+        f = files[0]
+        path = f.get_path()
+        filename = os.path.basename(path)
+        _, extension = os.path.splitext(path)
+        self.wallpaper = Wallpaper(path, filename, extension)
+        self._update_state()
+        self._update_action_row_labels()
+
+  def _on_delete_action(self, _action, _param):
+    self.wallpaper = None
+    self._update_state()
+
+  def _humanize(self, num, suffix="B"):
+    for unit in ["", "Ki", "Mi", "Gi", "Ti", "Pi", "Ei", "Zi"]:
+        if abs(num) < 1024.0:
+            return f"{num:3.1f} {unit}{suffix}"
+        num /= 1024.0
+    return f"{num:.1f} Yi{suffix}"
+
+class Wallpaper:
+  def __init__(self, path, filename, extension):
+    self.path = path
+    self.filename = filename
+    self.extension = extension
+

@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
   <requires lib="gtk" version="4.0"/>
+  <requires lib="adw" version="1.0"/>
   <template class="DynamicWallpaperWindow" parent="GtkApplicationWindow">
-    <property name="default-width">600</property>
-    <property name="default-height">600</property>
+    <property name="default-width">500</property>
+    <property name="default-height">450</property>
     <property name="title">Dynamic Wallpaper</property>
     <child type="titlebar">
-      <object class="GtkHeaderBar" id="header_bar">
+      <object class="GtkHeaderBar">
         <child type="end">
           <object class="GtkMenuButton">
             <property name="icon-name">open-menu-symbolic</property>
@@ -16,68 +17,39 @@
       </object>
     </child>
     <child>
-      <object class="GtkBox">
-        <property name="orientation">vertical</property>
-        <property name="valign">center</property>
-        <property name="spacing">48</property>
+      <object class="AdwToastOverlay" id="toast_overlay">
         <child>
-          <object class="GtkEntry" id="name_entry">
-            <property name="placeholder-text" translatable="yes">Wallpaper name</property>
-            <property name="halign">center</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkBox" id="light_box">
-            <property name="halign">center</property>
-            <property name="spacing">12</property>
+          <object class="GtkBox">
+            <property name="orientation">vertical</property>
+            <property name="valign">center</property>
+            <property name="spacing">48</property>
+            <property name="margin-top">36</property>
+            <property name="margin-end">36</property>
+            <property name="margin-bottom">36</property>
+            <property name="margin-start">36  </property>
             <child>
-              <object class="GtkButton" id="light_wallpaper_button">
-                <property name="action_name">win.light_open</property>
-                <property name="child">
-                  <object class="AdwButtonContent">
-                    <property name="icon-name">document-open-symbolic</property>
-                    <property name="label" translatable="yes">_Select light wallpaper</property>
-                    <property name="use-underline">True</property>
-                  </object>
-                </property>
+              <object class="GtkEntry" id="name_entry">
+                <property name="placeholder-text" translatable="yes">Wallpaper name</property>
+                <property name="halign">center</property>
               </object>
             </child>
-            <!--<child>
-              <object class="GtkButton" id="light_wallpaper_button">
-                <property name="action_name">win.open</property>
-                <property name="child">
-                  <object class="AdwButtonContent">
-                    <property name="icon-name">document-open-symbolic</property>
-                    <property name="label" translatable="yes">_Open light wallpaper</property>
-                    <property name="use-underline">True</property>
-                  </object>
-                </property>
-              </object>
-              <object class="WallpaperPicker"></object>
-            </child>-->
             <child>
-              <object class="GtkButton" id="dark_wallpaper_button">
-                <property name="action_name">win.dark_open</property>
-                <property name="child">
-                  <object class="AdwButtonContent">
-                    <property name="icon-name">document-open-symbolic</property>
-                    <property name="label" translatable="yes">_Select dark wallpaper</property>
-                    <property name="use-underline">True</property>
-                  </object>
-                </property>
+              <object class="GtkBox" id="picker_buttons">
+                <property name="halign">center</property>
+                <property name="spacing">12</property>
               </object>
             </child>
-          </object>
-        </child>
-        <child>
-          <object class="GtkButton">
-            <property name="label" translatable="yes">Create</property>
-            <property name="halign">center</property>
-            <property name="action_name">win.create</property>
-            <style>
-              <class name="suggested-action"/>
-              <class name="pill"/>
-            </style>
+            <child>
+              <object class="GtkButton">
+                <property name="label" translatable="yes">Create</property>
+                <property name="halign">center</property>
+                <property name="action_name">win.create</property>
+                <style>
+                  <class name="suggested-action"/>
+                  <class name="pill"/>
+                </style>
+              </object>
+            </child>
           </object>
         </child>
       </object>
@@ -86,10 +58,6 @@
 
   <menu id="primary_menu">
     <section>
-      <item>
-        <attribute name="label" translatable="yes">_Preferences</attribute>
-        <attribute name="action">app.preferences</attribute>
-      </item>
       <item>
         <attribute name="label" translatable="yes">_Keyboard Shortcuts</attribute>
         <attribute name="action">win.show-help-overlay</attribute>
@@ -101,3 +69,4 @@
     </section>
   </menu>
 </interface>
+
