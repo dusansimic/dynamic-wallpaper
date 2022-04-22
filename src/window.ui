@@ -7,13 +7,21 @@
     <property name="default-height">450</property>
     <property name="title">Dynamic Wallpaper</property>
     <child type="titlebar">
-      <object class="GtkHeaderBar">
+      <object class="AdwHeaderBar">
+        <child type="title">
+          <object class="GtkBox">
+            <property name="visible">false</property>
+          </object>
+        </child>
         <child type="end">
           <object class="GtkMenuButton">
             <property name="icon-name">open-menu-symbolic</property>
             <property name="menu-model">primary_menu</property>
           </object>
         </child>
+        <style>
+          <class name="flat"/>
+        </style>
       </object>
     </child>
     <child>
