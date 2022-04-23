@@ -30,8 +30,8 @@
             "buildsystem" : "meson",
             "sources" : [
                 {
-                    "type" : "git",
-                    "url" : "file:///home/dusan/Dev/dynamic-wallpaper/dynamic-wallpaper"
+                    "type" : "dir",
+                    "url" : "."
                 }
             ]
         }
