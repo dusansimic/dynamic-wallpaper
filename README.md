@@ -5,6 +5,13 @@ Dynamic wallpaper creator for Gnome 42
 ![Light screenshot](data/screenshots/main.png#gh-light-mode-only)
 ![Dark screenshot](data/screenshots/main-dark.png#gh-dark-mode-only)
 
+## 💻 Installation
+
+Dynamic Wallpaper is still in development and only way to download it is via
+artifacts of [CI](https://github.com/dusansimic/dynamic-wallpaper/actions)
+builds. Download the latest artifact and install the flatpak file from the
+archive (`flatpak install dynamic-wallpaper.flatpak`).
+
 ## 🛠️ Dependencies
 
 Please make sure you have these dependencies first before building.
