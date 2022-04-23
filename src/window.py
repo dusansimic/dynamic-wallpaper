@@ -28,11 +28,6 @@ class DynamicWallpaperWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'DynamicWallpaperWindow'
 
     wallpaper_name = None
-    images = {
-        'light': None,
-        'dark': None,
-    }
-    open_chooser = None
 
     toast_overlay = Gtk.Template.Child()
     name_entry = Gtk.Template.Child()
@@ -51,67 +46,33 @@ class DynamicWallpaperWindow(Gtk.ApplicationWindow):
         self.picker_buttons.append(self.light_picker)
         self.picker_buttons.append(self.dark_picker)
 
-        images_filter = Gtk.FileFilter()
-        images_filter.set_name(_('PNG & JPEG'))
-        images_filter.add_mime_type('image/png')
-        images_filter.add_mime_type('image/jpeg')
-
-        self.wallpaper_chooser = Gtk.FileChooserNative.new(
-            _('Select wallpaper'),
-            self,
-            Gtk.FileChooserAction.OPEN,
-            None,
-            None,
-        )
-        self.wallpaper_chooser.set_filter(images_filter)
-        self.wallpaper_chooser.set_select_multiple(False)
-        self.wallpaper_chooser.connect('response', self._on_wallpaper_chooser_response)
-
     def _setup_actions(self):
-        _light_open_action = Gio.SimpleAction.new('light_open', None)
-        _light_open_action.connect('activate', self._on_light_open_action)
-        self.add_action(_light_open_action)
-
-        _dark_open_action = Gio.SimpleAction.new('dark_open', None)
-        _dark_open_action.connect('activate', self._on_dark_open_action)
-        self.add_action(_dark_open_action)
-
         _create_action = Gio.SimpleAction.new('create', None)
         _create_action.connect('activate', self._on_create_action)
         self.add_action(_create_action)
 
-    def _on_wallpaper_chooser_response(self, dialog, response):
-        dialog.hide()
-        if response == Gtk.ResponseType.ACCEPT:
-            files = dialog.get_files()
-            if files:
-                f = files[0]
-                path = f.get_path()
-                _, extension = os.path.splitext(path)
-                self.images[self.open_chooser] = {
-                    'path': path,
-                    'extension': extension,
-                }
-        self.open_chooser = None
-
-    def _on_light_open_action(self, _action, _param):
-        self.open_chooser = 'light'
-        self.wallpaper_chooser.show()
-
-    def _on_dark_open_action(self, _action, _param):
-        self.open_chooser = 'dark'
-        self.wallpaper_chooser.show()
-
     def _on_create_action(self, _action, _param):
         self.wallpaper_name = self.name_entry.get_text().strip()
 
-        if (self.wallpaper_name == ""):
+        if self.wallpaper_name == "":
             self.toast_overlay.add_toast(Adw.Toast.new('Wallpaper name not set'))
             return
-        if (self.images['light'] == None):
+        elif not self._filename_valid(self.wallpaper_name):
+            self.toast_overlay.add_toast(Adw.Toast.new('Wallpaper name cannot contain null or /'))
+            return
+
+        data_dir = os.path.join(os.environ.get('HOME'), '.local', 'share')
+        wall_dir = os.path.join(data_dir, 'backgrounds', self.wallpaper_name)
+        xml_path = os.path.join(data_dir, 'gnome-background-properties', '{}.xml'.format(self.wallpaper_name))
+        if any(map(os.path.exists, [wall_dir, xml_path])):
+            self.toast_overlay.add_toast(Adw.Toast.new('Wallpaper with the same name already exists'))
+            return
+
+        if (self.light_picker.wallpaper == None):
             self.toast_overlay.add_toast(Adw.Toast.new('Light mode wallpaper not selected'))
             return
-        if (self.images['dark'] == None):
+
+        if (self.dark_picker.wallpaper == None):
             self.toast_overlay.add_toast(Adw.Toast.new('Dark mode wallpaper not selected'))
             return
 
@@ -119,8 +80,8 @@ class DynamicWallpaperWindow(Gtk.ApplicationWindow):
         props_dir = os.path.join(data_dir, 'gnome-background-properties')
         bgs_dir = os.path.join(data_dir, 'backgrounds', self.wallpaper_name)
 
-        l_wall_path = os.path.join(bgs_dir, "{}-l{}".format(self.wallpaper_name, self.images['light']['extension']))
-        d_wall_path = os.path.join(bgs_dir, "{}-d{}".format(self.wallpaper_name, self.images['dark']['extension']))
+        l_wall_path = os.path.join(bgs_dir, "{}-l{}".format(self.wallpaper_name, self.light_picker.wallpaper.extension))
+        d_wall_path = os.path.join(bgs_dir, "{}-d{}".format(self.wallpaper_name, self.dark_picker.wallpaper.extension))
         xml_path = os.path.join(props_dir, "{}.xml".format(self.wallpaper_name))
 
         self._make_dirs(props_dir, bgs_dir)
@@ -134,8 +95,8 @@ class DynamicWallpaperWindow(Gtk.ApplicationWindow):
         os.makedirs(bgs_dir, exist_ok=True)
 
     def _copy_wallpapers(self, l_wall_path, d_wall_path):
-        shutil.copyfile(self.images['light']['path'], l_wall_path)
-        shutil.copyfile(self.images['dark']['path'], d_wall_path)
+        shutil.copyfile(self.light_picker.wallpaper.path, l_wall_path)
+        shutil.copyfile(self.dark_picker.wallpaper.path, d_wall_path)
 
     def _write_xml(self, l_wall_path, d_wall_path, xml_path):
         tree = ET.Element('wallpapers')
@@ -150,6 +111,10 @@ class DynamicWallpaperWindow(Gtk.ApplicationWindow):
         with open(os.path.join(xml_path), 'wb') as f:
             f.write('<?xml version="1.0" encoding="UTF-8" ?><!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">'.encode('UTF-8'))
             ET.ElementTree(tree).write(f, 'utf-8')
+
+    def _filename_valid(self, filename) -> bool:
+        invalid_chars = ['\0', '/']
+        return not any([c in invalid_chars for c in filename])
 
 class AboutDialog(Gtk.AboutDialog):
 
