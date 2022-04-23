@@ -26,9 +26,8 @@ from gi.repository import Gtk, Gio, Adw
 from .window import DynamicWallpaperWindow, AboutDialog
 
 
-class Dynamic_wallpaperApplication(Adw.Application):
+class DynamicWallpaperApplication(Adw.Application):
     """The main application singleton class."""
-    #create_system_wide = Gio.SimpleAction.new_stateful('create_system_wide', GLib.VariantType.new('b'), GLib.Variant.new_boolean(False))
 
     def __init__(self):
         super().__init__(application_id='me.dusansimic.DynamicWallpaper',
@@ -70,5 +69,5 @@ class Dynamic_wallpaperApplication(Adw.Application):
 
 def main(version):
     """The application's entry point."""
-    app = Dynamic_wallpaperApplication()
+    app = DynamicWallpaperApplication()
     return app.run(sys.argv)
