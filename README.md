@@ -1,3 +1,5 @@
+<img align="left" style="vertical-align: middle" width="120" height="120" src="data/icons/hicolor/scalable/apps/me.dusansimic.DynamicWallpaper.svg">
+
 # Dynamic Wallpaper
 
 Dynamic wallpaper creator for Gnome 42

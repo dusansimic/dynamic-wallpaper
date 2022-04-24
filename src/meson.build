@@ -2,7 +2,7 @@ pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), meson.proje
 moduledir = join_paths(pkgdatadir, 'dynamic_wallpaper')
 gnome = import('gnome')
 
-gnome.compile_resources('dynamic-wallpaper',
+gnome.compile_resources(app_id,
   'dynamic_wallpaper.gresource.xml',
   gresource_bundle: true,
   install: true,
@@ -16,10 +16,11 @@ conf.set('PYTHON', python.find_installation('python3').path())
 conf.set('VERSION', meson.project_version())
 conf.set('localedir', join_paths(get_option('prefix'), get_option('localedir')))
 conf.set('pkgdatadir', pkgdatadir)
+conf.set('app_id', app_id)
 
 configure_file(
-  input: 'dynamic-wallpaper.in',
-  output: 'dynamic-wallpaper',
+  input: '@0@.in'.format(app_id),
+  output: '@0@'.format(app_id),
   configuration: conf,
   install: true,
   install_dir: get_option('bindir')
@@ -30,6 +31,11 @@ dynamic_wallpaper_sources = [
   'main.py',
   'window.py',
   'wallpaper_picker.py',
+]
+
+dependencies = [
+	dependency('gtk4'),
+	dependency('libadwaita-1'),
 ]
 
 install_data(dynamic_wallpaper_sources, install_dir: moduledir)

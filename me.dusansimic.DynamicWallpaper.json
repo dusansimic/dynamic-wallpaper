@@ -3,7 +3,7 @@
     "runtime" : "org.gnome.Platform",
     "runtime-version" : "42",
     "sdk" : "org.gnome.Sdk",
-    "command" : "dynamic-wallpaper",
+    "command" : "me.dusansimic.DynamicWallpaper",
     "finish-args" : [
         "--share=network",
         "--share=ipc",

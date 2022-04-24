@@ -1,9 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-	<id>me.dusansimic.DynamicWallpaper.desktop</id>
+	<id>@app_id@</id>
+  <provides>
+    <id>@app_id@.desktop</id>
+  </provides>
+  <launchable type="desktop-id">@app_id@.desktop</launchable>
+  <name>Dynamic Wallpaper</name>
+  <developer_name>Dušan Simić</developer_name>
+  <summary>Dynamic wallpaper creator for Gnome 42</summary>
 	<metadata_license>CC0-1.0</metadata_license>
-	<project_license></project_license>
+	<project_license>GPL-2.0</project_license>
+  <url type="homepage">https://github.com/dusansimic/dynamic-wallpaper</url>
+  <content_rating type="oars-1.1"/>
 	<description>
-	  <p>No description</p>
+	  <p>Dynamic wallpaper creator for Gnome 42</p>
 	</description>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Main window light theme</caption>
+      <image>https://raw.githubusercontent.com/dusansimic/dynamic-wallpaper/main/data/screenshots/main.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Main window dark theme</caption>
+      <image>https://raw.githubusercontent.com/dusansimic/dynamic-wallpaper/main/data/screenshots/main-dark.png</image>
+    </screenshot>
+  </screenshots>
+  <recommends>
+    <control>keyboard</control>
+    <control>pointing</control>
+  </recommends>
+  <releases>
+    <release version="0.0.1" date="2022-04-24">
+      <description>
+        <p>First release 🥳</p>
+      </description>
+    </release>
+  </releases>
 </component>

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Dynamic Wallpaper
-Exec=dynamic-wallpaper
-Icon=me.dusansimic.DynamicWallpaper
+Exec=@app_id@
+Icon=@app_id@
 Terminal=false
 Type=Application
 Categories=GTK;

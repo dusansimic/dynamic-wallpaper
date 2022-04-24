@@ -38,7 +38,7 @@ if __name__ == '__main__':
     import gi
 
     from gi.repository import Gio
-    resource = Gio.Resource.load(os.path.join(pkgdatadir, 'dynamic-wallpaper.gresource'))
+    resource = Gio.Resource.load(os.path.join(pkgdatadir, '@app_id@.gresource'))
     resource._register()
 
     from dynamic_wallpaper import main
