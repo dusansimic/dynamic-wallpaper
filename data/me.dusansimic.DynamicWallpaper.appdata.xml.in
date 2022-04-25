@@ -30,7 +30,7 @@
     <control>pointing</control>
   </recommends>
   <releases>
-    <release version="0.0.1" date="2022-04-24">
+    <release version="0.0.1" date="2022-04-25">
       <description>
         <p>First release 🥳</p>
       </description>
