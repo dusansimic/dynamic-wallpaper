@@ -4,6 +4,8 @@
 
 Dynamic wallpaper creator for Gnome 42
 
+🎨 Icon designed by [Rokwallaby](https://github.com/Rokwallaby).
+
 ![Light screenshot](data/screenshots/main.png#gh-light-mode-only)
 ![Dark screenshot](data/screenshots/main-dark.png#gh-dark-mode-only)
 
