@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the dynamic-wallpaper package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: dynamic-wallpaper\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-27 17:05+0200\n"
+"PO-Revision-Date: 2022-04-27 17:08+0200\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: data/me.dusansimic.DynamicWallpaper.desktop.in:3
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:8
+msgid "Dynamic Wallpaper"
+msgstr "Dynamische achtergrond"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:9
+msgid "Dušan Simić"
+msgstr "Dušan Simić"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:10
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:16
+msgid "Dynamic wallpaper creator for Gnome 42"
+msgstr "Dynamische achtergrondmaker voor GNOME 42"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:20
+msgid "Main window light theme"
+msgstr "Hoofdvenster met licht thema"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:24
+msgid "Main window dark theme"
+msgstr "Hoofdvenster met donker thema"
+
+#: src/window.ui:40
+msgid "Wallpaper name"
+msgstr "Achtergrondnaam"
+
+#: src/window.ui:52
+msgid "Create"
+msgstr "Maken"
+
+#: src/window.ui:70
+msgid "_Keyboard Shortcuts"
+msgstr "_Sneltoetsen"
+
+#: src/window.ui:74
+msgid "_About Dynamic Wallpaper"
+msgstr "Over Dyn_amische achtergrond"
