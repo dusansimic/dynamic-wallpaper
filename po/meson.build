@@ -1,1 +1,1 @@
-i18n.gettext('dynamic-wallpaper', preset: 'glib')
+i18n.gettext('me.dusansimic.DynamicWallpaper', preset: 'glib')

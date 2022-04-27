@@ -1,11 +1,11 @@
-# Italian translation for dynamic-wallpaper.
+# Italian translation for me.dusansimic.DynamicWallpaper.
 # Copyright (C) 2022 Dušan Simić.
-# This file is distributed under the same license as the dynamic-wallpaper package.
+# This file is distributed under the same license as the me.dusansimic.DynamicWallpaper package.
 # musiclover <musiclover382@protonmail.com>, 2022.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: dynamic-wallpaper\n"
+"Project-Id-Version: me.dusansimic.DynamicWallpaper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-27 18:54+0200\n"
 "PO-Revision-Date: 2022-04-27 18:55+0200\n"

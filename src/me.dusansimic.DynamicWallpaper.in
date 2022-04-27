@@ -1,6 +1,6 @@
 #!@PYTHON@
 
-# dynamic-wallpaper.in
+# me.dusansimic.DynamicWallpaper.in
 #
 # Copyright 2022 Dušan Simić
 #
@@ -30,9 +30,9 @@ localedir = '@localedir@'
 
 sys.path.insert(1, pkgdatadir)
 signal.signal(signal.SIGINT, signal.SIG_DFL)
-locale.bindtextdomain('dynamic-wallpaper', localedir)
-locale.textdomain('dynamic-wallpaper')
-gettext.install('dynamic-wallpaper', localedir)
+locale.bindtextdomain('me.dusansimic.DynamicWallpaper', localedir)
+locale.textdomain('me.dusansimic.DynamicWallpaper')
+gettext.install('me.dusansimic.DynamicWallpaper', localedir)
 
 if __name__ == '__main__':
     import gi
