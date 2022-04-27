@@ -40,8 +40,8 @@ class DynamicWallpaperWindow(Gtk.ApplicationWindow):
 
         self.name_entry.grab_focus()
 
-        self.light_picker = WallpaperPicker(self, 'Select light wallpaper')
-        self.dark_picker = WallpaperPicker(self, 'Select dark wallpaper')
+        self.light_picker = WallpaperPicker(self, _('Select light wallpaper'))
+        self.dark_picker = WallpaperPicker(self, _('Select dark wallpaper'))
 
         self.picker_buttons.append(self.light_picker)
         self.picker_buttons.append(self.dark_picker)
@@ -55,25 +55,25 @@ class DynamicWallpaperWindow(Gtk.ApplicationWindow):
         self.wallpaper_name = self.name_entry.get_text().strip()
 
         if self.wallpaper_name == "":
-            self.toast_overlay.add_toast(Adw.Toast.new('Wallpaper name not set'))
+            self.toast_overlay.add_toast(Adw.Toast.new(_('Wallpaper name not set')))
             return
         elif not self._filename_valid(self.wallpaper_name):
-            self.toast_overlay.add_toast(Adw.Toast.new('Wallpaper name cannot contain null or /'))
+            self.toast_overlay.add_toast(Adw.Toast.new(_('Wallpaper name cannot contain null or /')))
             return
 
         data_dir = os.path.join(os.environ.get('HOME'), '.local', 'share')
         wall_dir = os.path.join(data_dir, 'backgrounds', self.wallpaper_name)
         xml_path = os.path.join(data_dir, 'gnome-background-properties', '{}.xml'.format(self.wallpaper_name))
         if any(map(os.path.exists, [wall_dir, xml_path])):
-            self.toast_overlay.add_toast(Adw.Toast.new('Wallpaper with the same name already exists'))
+            self.toast_overlay.add_toast(Adw.Toast.new(_('Wallpaper with the same name already exists')))
             return
 
         if (self.light_picker.wallpaper == None):
-            self.toast_overlay.add_toast(Adw.Toast.new('Light mode wallpaper not selected'))
+            self.toast_overlay.add_toast(Adw.Toast.new(_('Light mode wallpaper not selected')))
             return
 
         if (self.dark_picker.wallpaper == None):
-            self.toast_overlay.add_toast(Adw.Toast.new('Dark mode wallpaper not selected'))
+            self.toast_overlay.add_toast(Adw.Toast.new(_('Dark mode wallpaper not selected')))
             return
 
         data_dir = os.path.join(os.environ.get('HOME'), '.local', 'share')
@@ -88,7 +88,7 @@ class DynamicWallpaperWindow(Gtk.ApplicationWindow):
         self._copy_wallpapers(l_wall_path, d_wall_path)
         self._write_xml(l_wall_path, d_wall_path, xml_path)
 
-        self.toast_overlay.add_toast(Adw.Toast.new('New dynamic wallpaper created'))
+        self.toast_overlay.add_toast(Adw.Toast.new(_('New dynamic wallpaper created')))
 
     def _make_dirs(self, props_dir, bgs_dir):
         os.makedirs(props_dir, exist_ok=True)
@@ -120,9 +120,10 @@ class AboutDialog(Gtk.AboutDialog):
 
     def __init__(self, parent):
         Gtk.AboutDialog.__init__(self)
-        self.props.program_name = 'Dynamic Wallpaper'
+        self.props.program_name = _('Dynamic Wallpaper')
         self.props.version = "0.0.1"
         self.props.authors = ['Dušan Simić']
+        self.props.translator_credits = _('translator-credits')
         self.props.copyright = '2022 Dušan Simić'
         self.props.logo_icon_name = 'me.dusansimic.DynamicWallpaper'
         self.props.modal = True
