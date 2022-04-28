@@ -43,8 +43,8 @@ class DynamicWallpaperWindow(Gtk.ApplicationWindow):
         self.light_picker = WallpaperPicker(self, _('Select light wallpaper'))
         self.dark_picker = WallpaperPicker(self, _('Select dark wallpaper'))
 
-        self.picker_buttons.append(self.light_picker)
-        self.picker_buttons.append(self.dark_picker)
+        # self.picker_buttons.append(self.light_picker)
+        # self.picker_buttons.append(self.dark_picker)
 
     def _setup_actions(self):
         _create_action = Gio.SimpleAction.new('create', None)
