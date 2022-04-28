@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the me.dusansimic.DynamicWallpaper package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: me.dusansimic.DynamicWallpaper\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-27 18:54+0200\n"
+"PO-Revision-Date: 2022-04-28 17:07+0200\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: data/me.dusansimic.DynamicWallpaper.desktop.in:3
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:8 src/window.py:123
+msgid "Dynamic Wallpaper"
+msgstr "Dynamische achtergrond"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:9
+msgid "Dušan Simić"
+msgstr "Dušan Simić"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:10
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:16
+msgid "Dynamic wallpaper creator for Gnome 42"
+msgstr "Dynamische achtergrondmaker voor GNOME 42"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:20
+msgid "Main window light theme"
+msgstr "Hoofdvenster met licht thema"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:24
+msgid "Main window dark theme"
+msgstr "Hoofdvenster met donker thema"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:35
+msgid "First release 🥳"
+msgstr "De allereerste versie! 🥳"
+
+#: src/wallpaper_picker.ui:14
+msgid "_Select wallpaper"
+msgstr "Kie_s een achtergrond"
+
+#: src/window.ui:40
+msgid "Wallpaper name"
+msgstr "Achtergrondnaam"
+
+#: src/window.ui:52
+msgid "Create"
+msgstr "Maken"
+
+#: src/window.ui:70
+msgid "_Keyboard Shortcuts"
+msgstr "_Sneltoetsen"
+
+#: src/window.ui:74
+msgid "_About Dynamic Wallpaper"
+msgstr "Over Dyn_amische achtergrond"
+
+#: src/gtk/help-overlay.ui:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Algemeen"
+
+#: src/gtk/help-overlay.ui:14
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Sneltoetsen tonen"
+
+#: src/gtk/help-overlay.ui:20
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Afsluiten"
+
+#: src/wallpaper_picker.py:29
+msgid "PNG & JPEG"
+msgstr "Png en jpeg"
+
+#: src/wallpaper_picker.py:34
+msgid "Select wallpaper"
+msgstr "Kies een achtergrond"
+
+#: src/window.py:43
+msgid "Select light wallpaper"
+msgstr "Kies een lichte achtergrond"
+
+#: src/window.py:44
+msgid "Select dark wallpaper"
+msgstr "Kies een donkere achtergrond"
+
+#: src/window.py:58
+msgid "Wallpaper name not set"
+msgstr "Voer een achtergrondnaam in"
+
+#: src/window.py:61
+msgid "Wallpaper name cannot contain null or /"
+msgstr "De naam mag niet het woord ‘null’ of het leesteken ‘/’ bevatten"
+
+#: src/window.py:68
+msgid "Wallpaper with the same name already exists"
+msgstr "Er is al een achtergrond met deze naam"
+
+#: src/window.py:72
+msgid "Light mode wallpaper not selected"
+msgstr "U heeft geen lichte achtergrond gekozen"
+
+#: src/window.py:76
+msgid "Dark mode wallpaper not selected"
+msgstr "U heeft geen donkere achtergrond gekozen"
+
+#: src/window.py:91
+msgid "New dynamic wallpaper created"
+msgstr "De dynamische achtergrond is samengesteld"
+
+#: src/window.py:126
+msgid "translator-credits"
+msgstr "Heimen Stoffels <vistausss@fastmail.com>"
