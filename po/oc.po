@@ -41,7 +41,7 @@ msgstr "Fenèstra principala en tèma escur"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:35
 msgid "First release 🥳"
-msgstr "Primièra version"
+msgstr "Primièra version 🥳"
 
 #: src/wallpaper_picker.ui:14
 msgid "_Select wallpaper"
