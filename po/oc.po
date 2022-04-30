@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the me.dusansimic.DynamicWallpaper package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: me.dusansimic.DynamicWallpaper\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-27 18:54+0200\n"
+"PO-Revision-Date: 2022-04-30 12:58+0200\n"
+"Last-Translator: Quentin PAGÈS\n"
+"Language-Team: \n"
+"Language: oc\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: data/me.dusansimic.DynamicWallpaper.desktop.in:3
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:8 src/window.py:123
+msgid "Dynamic Wallpaper"
+msgstr "Papièrs pintrats dinamics"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:9
+msgid "Dušan Simić"
+msgstr "Dušan Simić"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:10
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:16
+msgid "Dynamic wallpaper creator for Gnome 42"
+msgstr "Creador de papièrs pintrats dinamics per Gnome 42"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:20
+msgid "Main window light theme"
+msgstr "Fenèstra principala en tèma clar"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:24
+msgid "Main window dark theme"
+msgstr "Fenèstra principala en tèma escur"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:35
+msgid "First release 🥳"
+msgstr "Primièra version"
+
+#: src/wallpaper_picker.ui:14
+msgid "_Select wallpaper"
+msgstr "_Causir papièr pintrat"
+
+#: src/window.ui:40
+msgid "Wallpaper name"
+msgstr "Nom del papièr pintrat"
+
+#: src/window.ui:52
+msgid "Create"
+msgstr "Crear"
+
+#: src/window.ui:70
+msgid "_Keyboard Shortcuts"
+msgstr "_Acorchis de clavièr"
+
+#: src/window.ui:74
+msgid "_About Dynamic Wallpaper"
+msgstr "_A prepaus de Papièrs Pintrats dinamics"
+
+#: src/gtk/help-overlay.ui:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr "General"
+
+#: src/gtk/help-overlay.ui:14
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Afichar los acorchis"
+
+#: src/gtk/help-overlay.ui:20
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Quitar"
+
+#: src/wallpaper_picker.py:29
+msgid "PNG & JPEG"
+msgstr "PNG & JPEG"
+
+#: src/wallpaper_picker.py:34
+msgid "Select wallpaper"
+msgstr "Causir papièr pintrat"
+
+#: src/window.py:43
+msgid "Select light wallpaper"
+msgstr "Causir papièr pintrat clar"
+
+#: src/window.py:44
+msgid "Select dark wallpaper"
+msgstr "Causir papièr pintrat escur"
+
+#: src/window.py:58
+msgid "Wallpaper name not set"
+msgstr "Nom del papièr pintrat pas definit"
+
+#: src/window.py:61
+msgid "Wallpaper name cannot contain null or /"
+msgstr "Lo nom del papièr pintrat pòt pas conténer null o /"
+
+#: src/window.py:68
+msgid "Wallpaper with the same name already exists"
+msgstr "Un papièr pintrat amb lo meteis nom existís ja"
+
+#: src/window.py:72
+msgid "Light mode wallpaper not selected"
+msgstr "Papièr pintrat clar pas seleccionat"
+
+#: src/window.py:76
+msgid "Dark mode wallpaper not selected"
+msgstr "Papièr pintrat escur pas seleccionat"
+
+#: src/window.py:91
+msgid "New dynamic wallpaper created"
+msgstr "Papièr pintrat dinamic novèl creat"
+
+#: src/window.py:126
+msgid "translator-credits"
+msgstr "Quentin PAGÈS"
