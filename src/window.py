@@ -124,7 +124,9 @@ class AboutDialog(Gtk.AboutDialog):
         self.props.version = "0.0.1"
         self.props.authors = ['Dušan Simić']
         self.props.translator_credits = _('translator-credits')
-        self.props.copyright = '2022 Dušan Simić'
+        self.props.copyright = '© 2022 Dušan Simić'
+        self.props.license_type = Gtk.License(Gtk.License.GPL_2_0)
+        self.props.website = 'https://github.com/dusansimic/dynamic-wallpaper'
         self.props.logo_icon_name = 'me.dusansimic.DynamicWallpaper'
         self.props.modal = True
         self.set_transient_for(parent)
