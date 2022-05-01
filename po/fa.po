@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the me.dusansimic.DynamicWallpaper package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: me.dusansimic.DynamicWallpaper\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-27 18:54+0200\n"
+"PO-Revision-Date: 2022-04-30 18:29+0430\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: data/me.dusansimic.DynamicWallpaper.desktop.in:3
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:8 src/window.py:123
+msgid "Dynamic Wallpaper"
+msgstr "پس‌زمینه پویا"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:9
+msgid "Dušan Simić"
+msgstr "Dušan Simić"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:10
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:16
+msgid "Dynamic wallpaper creator for Gnome 42"
+msgstr "سازنده برنامه پس‌زمینه پویا برای گنوم 42"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:20
+msgid "Main window light theme"
+msgstr "تم روشن پنجره اصلی"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:24
+msgid "Main window dark theme"
+msgstr "تم تیره پنجره اصلی"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:35
+msgid "First release 🥳"
+msgstr "اولین نسخه 🥳"
+
+#: src/wallpaper_picker.ui:14
+msgid "_Select wallpaper"
+msgstr "_انتخاب تصویر پس‌زمینه"
+
+#: src/window.ui:40
+msgid "Wallpaper name"
+msgstr "نام تصویر پس‌زمینه"
+
+#: src/window.ui:52
+msgid "Create"
+msgstr "ایجاد"
+
+#: src/window.ui:70
+msgid "_Keyboard Shortcuts"
+msgstr "_میان‌بر های کیبورد"
+
+#: src/window.ui:74
+msgid "_About Dynamic Wallpaper"
+msgstr "_درباره پس‌زمینه پویا"
+
+#: src/gtk/help-overlay.ui:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr "عمومی"
+
+#: src/gtk/help-overlay.ui:14
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "نشان دادن میانبر ها"
+
+#: src/gtk/help-overlay.ui:20
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "خارج شدن"
+
+#: src/wallpaper_picker.py:29
+msgid "PNG & JPEG"
+msgstr "پی‌ان‌جی و جی‌پگ"
+
+#: src/wallpaper_picker.py:34
+msgid "Select wallpaper"
+msgstr "انتخاب تصویر پس‌زمینه"
+
+#: src/window.py:43
+msgid "Select light wallpaper"
+msgstr "انتخاب تصویر پس‌زمینه حالت روشن"
+
+#: src/window.py:44
+msgid "Select dark wallpaper"
+msgstr "انتخاب تصویر پس‌زمینه حالت تیره"
+
+#: src/window.py:58
+msgid "Wallpaper name not set"
+msgstr "نام تصویر پس‌زمینه انتخاب نشده"
+
+#: src/window.py:61
+msgid "Wallpaper name cannot contain null or /"
+msgstr "نام تصویر پس‌زمینه نمی تواند شامل نال یا / باشد"
+
+#: src/window.py:68
+msgid "Wallpaper with the same name already exists"
+msgstr "تصویر پس‌زمینه با همین نام از قبل وجود دارد"
+
+#: src/window.py:72
+msgid "Light mode wallpaper not selected"
+msgstr "تصویر پس‌زمینه حالت روشن انتخاب نشده است"
+
+#: src/window.py:76
+msgid "Dark mode wallpaper not selected"
+msgstr "تصویر پس‌زمینه حالت تیره انتخاب نشده است"
+
+#: src/window.py:91
+msgid "New dynamic wallpaper created"
+msgstr "پس‌زمینه پویای جدید ساخته شد"
+
+#: src/window.py:126
+msgid "translator-credits"
+msgstr "نیما فنی اصل <nma.fanniasl@gmail.com> <smartnima.com>"
