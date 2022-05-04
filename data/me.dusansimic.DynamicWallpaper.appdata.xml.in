@@ -30,6 +30,19 @@
     <control>pointing</control>
   </recommends>
   <releases>
+    <release version="0.0.2" date="2022-05-04">
+      <description>
+        <p>New translations and additional information in about dialog.</p>
+        <p>Translated to:</p>
+        <ul>
+          <li>Persian</li>
+          <li>Italian</li>
+          <li>Dutch</li>
+          <li>Occitan</li>
+          <li>Brazilian Portugese</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.0.1" date="2022-04-25">
       <description>
         <p>First release 🥳</p>
