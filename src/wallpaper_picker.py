@@ -1,6 +1,23 @@
 from gi.repository import Gtk, Adw, Gio
+from enum import Enum
 import os
 import uuid
+
+class WallpaperType(Enum):
+    LIGHT = 1
+    DARK = 2
+
+    def label(self):
+        return {
+            'LIGHT': _('Light'),
+            'DARK': _('Dark'),
+        }[self.name]
+
+    def icon(self):
+        return {
+            'LIGHT': 'weather-clear',
+            'DARK': 'weather-clear-night',
+        }[self.name]
 
 @Gtk.Template(resource_path='/me/dusansimic/DynamicWallpaper/wallpaper_picker.ui')
 class WallpaperPicker(Adw.Bin):
@@ -9,18 +26,20 @@ class WallpaperPicker(Adw.Bin):
   wallpaper = None
 
   picker_button = Gtk.Template.Child()
-  picker_button_content = Gtk.Template.Child()
+  label = Gtk.Template.Child()
+  icon = Gtk.Template.Child()
   wallpaper_action_row = Gtk.Template.Child()
   delete_button = Gtk.Template.Child()
 
-  def __init__(self, parent, label, uid = None):
+  def __init__(self, parent, type, uid = None):
     Adw.Bin.__init__(self)
 
     self._uid = uuid.uuid4() if uid == None else uid
 
     self.picker_button.set_action_name('win.{}_open'.format(self._uid))
     self.delete_button.set_action_name('win.{}_delete'.format(self._uid))
-    self.picker_button_content.set_label(label)
+    self.label.set_label(type.label())
+    self.icon.set_from_icon_name(type.icon())
 
     self._update_state()
     self._setup_actions(parent)

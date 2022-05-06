@@ -5,6 +5,7 @@
   <template class="DynamicWallpaperWindow" parent="GtkApplicationWindow">
     <property name="default-width">0</property>
     <property name="default-height">0</property>
+    <property name="resizable">false</property>
     <property name="title">Dynamic Wallpaper</property>
     <child type="titlebar">
       <object class="AdwHeaderBar">
@@ -31,10 +32,9 @@
             <property name="orientation">vertical</property>
             <property name="valign">center</property>
             <property name="spacing">24</property>
-            <property name="margin-top">32</property>
-            <property name="margin-end">32</property>
-            <property name="margin-bottom">32</property>
-            <property name="margin-start">32</property>
+            <property name="margin-end">42</property>
+            <property name="margin-bottom">42</property>
+            <property name="margin-start">42</property>
             <child>
               <object class="GtkEntry" id="name_entry">
                 <property name="placeholder-text" translatable="yes">Wallpaper name</property>
@@ -43,53 +43,6 @@
             <child>
               <object class="GtkBox" id="picker_buttons">
                 <property name="spacing">24</property>
-                <child>
-                  <object class="GtkButton">
-                    <child>
-                      <object class="GtkBox">
-                        <property name="orientation">vertical</property>
-                        <property name="spacing">6</property>
-                        <child>
-                          <object class="GtkImage">
-                            <property name="width-request">128</property>
-                            <property name="height-request">72</property>
-                            <property name="icon-name">weather-clear</property>
-                            <property name="pixel_size">32</property>
-                          </object>
-                        </child>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="label" translatable="yes">Light</property>
-                          </object>
-                        </child>
-                      </object>
-                    </child>
-                  </object>
-                </child>
-                <child>
-                  <object class="GtkButton">
-                    <property name="receives-default">True</property>
-                    <child>
-                      <object class="GtkBox">
-                        <property name="orientation">vertical</property>
-                        <property name="spacing">6</property>
-                        <child>
-                          <object class="GtkImage">
-                            <property name="width-request">128</property>
-                            <property name="height-request">72</property>
-                            <property name="icon-name">weather-clear-night</property>
-                            <property name="pixel_size">32</property>
-                          </object>
-                        </child>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="label" translatable="yes">Night</property>
-                          </object>
-                        </child>
-                      </object>
-                    </child>
-                  </object>
-                </child>
               </object>
             </child>
             <child>

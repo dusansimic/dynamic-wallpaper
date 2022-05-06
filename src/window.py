@@ -17,7 +17,7 @@
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
 from gi.repository import Gtk, Adw, Gio
-from .wallpaper_picker import WallpaperPicker
+from .wallpaper_picker import WallpaperPicker, WallpaperType
 import os
 import shutil
 import xml.etree.cElementTree as ET
@@ -40,11 +40,11 @@ class DynamicWallpaperWindow(Gtk.ApplicationWindow):
 
         self.name_entry.grab_focus()
 
-        self.light_picker = WallpaperPicker(self, _('Select light wallpaper'))
-        self.dark_picker = WallpaperPicker(self, _('Select dark wallpaper'))
+        self.light_picker = WallpaperPicker(self, WallpaperType.LIGHT)
+        self.dark_picker = WallpaperPicker(self, WallpaperType.DARK)
 
-        # self.picker_buttons.append(self.light_picker)
-        # self.picker_buttons.append(self.dark_picker)
+        self.picker_buttons.append(self.light_picker)
+        self.picker_buttons.append(self.dark_picker)
 
     def _setup_actions(self):
         _create_action = Gio.SimpleAction.new('create', None)
