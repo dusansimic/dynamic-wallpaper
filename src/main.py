@@ -23,7 +23,8 @@ gi.require_version('Gtk', '4.0')
 gi.require_version('Adw', '1')
 
 from gi.repository import Gtk, Gio, Adw
-from .window import DynamicWallpaperWindow, AboutDialog
+from .window import DynamicWallpaperWindow
+from .about_dialog import AboutDialog
 
 
 class DynamicWallpaperApplication(Adw.Application):

@@ -1,0 +1,125 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the me.dusansimic.DynamicWallpaper package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Pedro Sader Azevedo <pedro.saderazevedo@protonmail.com>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: me.dusansimic.DynamicWallpaper\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-27 18:54+0200\n"
+"PO-Revision-Date: 2022-04-29 00:44-0300\n"
+"Last-Translator: Pedro Sader Azevedo <pedro.saderazevedo@protonmail.com>\n"
+"Language-Team: Brazilian Portuguese <pedro.saderazevedo@protonmail.com>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Gtranslator 42.0\n"
+
+#: data/me.dusansimic.DynamicWallpaper.desktop.in:3
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:8 src/window.py:123
+msgid "Dynamic Wallpaper"
+msgstr "Plano de Fundo Dinâmico"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:9
+msgid "Dušan Simić"
+msgstr "Dušan Simić"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:10
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:16
+msgid "Dynamic wallpaper creator for Gnome 42"
+msgstr "Criador do Plano de Fundo Dinâmico para o GNOME 42"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:20
+msgid "Main window light theme"
+msgstr "Tema claro da janela principal"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:24
+msgid "Main window dark theme"
+msgstr "Tema escuro da janela principal"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:35
+msgid "First release 🥳"
+msgstr "Primeiro lançamento 🥳"
+
+#: src/wallpaper_picker.ui:14
+msgid "_Select wallpaper"
+msgstr "_Selecione um plano de fundo"
+
+#: src/window.ui:40
+msgid "Wallpaper name"
+msgstr "Nome do plano de fundo"
+
+#: src/window.ui:52
+msgid "Create"
+msgstr "Criar"
+
+#: src/window.ui:70
+msgid "_Keyboard Shortcuts"
+msgstr "_Atalhos de teclado"
+
+#: src/window.ui:74
+msgid "_About Dynamic Wallpaper"
+msgstr "_Sobre o Plano de Fundo Dinâmico"
+
+#: src/gtk/help-overlay.ui:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Geral"
+
+#: src/gtk/help-overlay.ui:14
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Mostrar atalhos"
+
+#: src/gtk/help-overlay.ui:20
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Sair"
+
+#: src/wallpaper_picker.py:29
+msgid "PNG & JPEG"
+msgstr "PNG e JPEG"
+
+#: src/wallpaper_picker.py:34
+msgid "Select wallpaper"
+msgstr "Selecionar plano de fundo"
+
+#: src/window.py:43
+msgid "Select light wallpaper"
+msgstr "Selecionar plano de fundo claro"
+
+#: src/window.py:44
+msgid "Select dark wallpaper"
+msgstr "Selecionar plano de fundo escuro"
+
+#: src/window.py:58
+msgid "Wallpaper name not set"
+msgstr "Nome do plano de fundo não escrito"
+
+#: src/window.py:61
+msgid "Wallpaper name cannot contain null or /"
+msgstr "O nome do plano de fundo não pode conter null ou /"
+
+#: src/window.py:68
+msgid "Wallpaper with the same name already exists"
+msgstr "Um plano de fundo com o mesmo nome já existe"
+
+#: src/window.py:72
+msgid "Light mode wallpaper not selected"
+msgstr "Plano de fundo claro não selecionado"
+
+#: src/window.py:76
+msgid "Dark mode wallpaper not selected"
+msgstr "Plano de fundo escuro não selecionado"
+
+#: src/window.py:91
+msgid "New dynamic wallpaper created"
+msgstr "Novo plano de fundo dinâmico criado"
+
+#: src/window.py:126
+msgid "translator-credits"
+msgstr "Pedro Sader Azevedo"

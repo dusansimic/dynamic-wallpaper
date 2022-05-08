@@ -5,13 +5,12 @@
     "sdk" : "org.gnome.Sdk",
     "command" : "me.dusansimic.DynamicWallpaper",
     "finish-args" : [
-        "--share=network",
         "--share=ipc",
         "--socket=fallback-x11",
         "--device=dri",
         "--socket=wayland",
-        "--filesystem=xdg-data/backgrounds",
-        "--filesystem=xdg-data/gnome-background-properties"
+        "--filesystem=xdg-data/backgrounds:create",
+        "--filesystem=xdg-data/gnome-background-properties:create"
     ],
     "cleanup" : [
         "/include",
