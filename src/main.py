@@ -22,7 +22,7 @@ import gi
 gi.require_version('Gtk', '4.0')
 gi.require_version('Adw', '1')
 
-from gi.repository import Gtk, Gio, Adw
+from gi.repository import Gtk, Gdk, Gio, Adw
 from .window import DynamicWallpaperWindow, AboutDialog
 
 
@@ -32,6 +32,10 @@ class DynamicWallpaperApplication(Adw.Application):
     def __init__(self):
         super().__init__(application_id='me.dusansimic.DynamicWallpaper',
                          flags=Gio.ApplicationFlags.FLAGS_NONE)
+        display = Gdk.Display.get_default()
+        provider = Gtk.CssProvider()
+        provider.load_from_resource('/me/dusansimic/DynamicWallpaper/wallpaper_picker.css')
+        Gtk.StyleContext.add_provider_for_display(display, provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION)
         self.create_action('quit', self.quit, ['<primary>q'])
         self.create_action('about', self.on_about_action)
 

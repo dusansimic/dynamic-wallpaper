@@ -30,11 +30,26 @@
           </object>
         </child>
         <child>
-          <object class="AdwActionRow" id="wallpaper_action_row">
+          <object class="GtkOverlay" id="picture_overlay">
+            <style>
+              <class name="picture-thumbnail"/>
+            </style>
             <child>
-              <object class="GtkButton" id="delete_button">
-                <property name="icon-name">edit-delete-symbolic</property>
-                <property name="valign">center</property>
+              <object class="GtkPicture" id="wallpaper_picture">
+                <property name="width-request">144</property>
+                <property name="height-request">108</property>
+              </object>
+            </child>
+            <child type="overlay">
+              <object class="GtkButton">
+                <property name="icon-name">window-close-symbolic</property>
+                <property name="halign">2</property> <!-- GTK_ALIGN_END -->
+                <property name="valign">1</property> <!-- GTK_ALIGN_START -->
+                <style>
+                  <class name="osd"/>
+                  <class name="circular"/>
+                  <class name="remove-button"/>
+                </style>
               </object>
             </child>
           </object>

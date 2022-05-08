@@ -28,8 +28,9 @@ class WallpaperPicker(Adw.Bin):
   picker_button = Gtk.Template.Child()
   label = Gtk.Template.Child()
   icon = Gtk.Template.Child()
-  wallpaper_action_row = Gtk.Template.Child()
-  delete_button = Gtk.Template.Child()
+  picture_overlay = Gtk.Template.Child()
+  wallpaper_picture = Gtk.Template.Child()
+  #delete_button = Gtk.Template.Child()
 
   def __init__(self, parent, type, uid = None):
     Adw.Bin.__init__(self)
@@ -37,7 +38,7 @@ class WallpaperPicker(Adw.Bin):
     self._uid = uuid.uuid4() if uid == None else uid
 
     self.picker_button.set_action_name('win.{}_open'.format(self._uid))
-    self.delete_button.set_action_name('win.{}_delete'.format(self._uid))
+    #self.delete_button.set_action_name('win.{}_delete'.format(self._uid))
     self.label.set_label(type.label())
     self.icon.set_from_icon_name(type.icon())
 
@@ -71,12 +72,10 @@ class WallpaperPicker(Adw.Bin):
 
   def _update_state(self):
     self.picker_button.set_visible(bool(not self.wallpaper))
-    self.wallpaper_action_row.set_visible(bool(self.wallpaper))
+    self.picture_overlay.set_visible(bool(self.wallpaper))
 
-  def _update_action_row_labels(self):
-    self.wallpaper_action_row.set_title(self.wallpaper.filename)
-    size = os.path.getsize(self.wallpaper.path)
-    self.wallpaper_action_row.set_subtitle(self._humanize(size))
+  def _update_image(self):
+    self.picture_overlay.set_from_file(self.wallpaper.path)
 
   def _on_open_action(self, _action, _param):
     self.wallpaper_chooser.show()
@@ -91,8 +90,9 @@ class WallpaperPicker(Adw.Bin):
         filename = os.path.basename(path)
         _, extension = os.path.splitext(path)
         self.wallpaper = Wallpaper(path, filename, extension)
+        self.wallpaper_picture.set_filename(path)
         self._update_state()
-        self._update_action_row_labels()
+        self._update_image()
 
   def _on_delete_action(self, _action, _param):
     self.wallpaper = None
