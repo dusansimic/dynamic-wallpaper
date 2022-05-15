@@ -30,7 +30,7 @@ msgstr "Dušan Simić"
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:10
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:16
 msgid "Dynamic wallpaper creator for Gnome 42"
-msgstr "سازنده برنامه پس‌زمینه پویا برای گنوم 42"
+msgstr "سازنده پس‌زمینه پویا برای گنوم 42"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:20
 msgid "Main window light theme"
