@@ -7,22 +7,49 @@
       <object class="GtkBox">
         <child>
           <object class="GtkButton" id="picker_button">
-            <property name="valign">center</property>
-            <property name="child">
-              <object class="AdwButtonContent" id="picker_button_content">
-                <property name="icon-name">document-open-symbolic</property>
-                <property name="label" translatable="yes">_Select wallpaper</property>
-                <property name="use-underline">True</property>
+            <child>
+              <object class="GtkBox">
+                <property name="orientation">vertical</property>
+                <property name="spacing">6</property>
+                <property name="margin-bottom">16</property>
+                <child>
+                  <object class="GtkImage" id="icon">
+                    <property name="width-request">128</property>
+                    <property name="height-request">72</property>
+                    <property name="icon-name">weather-clear</property>
+                    <property name="pixel_size">32</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label">
+                    <property name="label" translatable="yes">Light</property>
+                  </object>
+                </child>
               </object>
-            </property>
+            </child>
           </object>
         </child>
         <child>
-          <object class="AdwActionRow" id="wallpaper_action_row">
+          <object class="GtkOverlay" id="picture_overlay">
+            <style>
+              <class name="picture-thumbnail"/>
+            </style>
             <child>
-              <object class="GtkButton" id="delete_button">
-                <property name="icon-name">edit-delete-symbolic</property>
-                <property name="valign">center</property>
+              <object class="GtkPicture" id="wallpaper_picture">
+                <property name="width-request">144</property>
+                <property name="height-request">108</property>
+              </object>
+            </child>
+            <child type="overlay">
+              <object class="GtkButton">
+                <property name="icon-name">window-close-symbolic</property>
+                <property name="halign">2</property> <!-- GTK_ALIGN_END -->
+                <property name="valign">1</property> <!-- GTK_ALIGN_START -->
+                <style>
+                  <class name="osd"/>
+                  <class name="circular"/>
+                  <class name="remove-button"/>
+                </style>
               </object>
             </child>
           </object>

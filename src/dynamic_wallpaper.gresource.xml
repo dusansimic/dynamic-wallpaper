@@ -4,5 +4,6 @@
     <file>window.ui</file>
     <file>wallpaper_picker.ui</file>
     <file>gtk/help-overlay.ui</file>
+    <file>wallpaper_picker.css</file>
   </gresource>
 </gresources>
