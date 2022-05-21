@@ -1,0 +1,11 @@
+.picture-thumbnail {
+  border-radius: 6px;
+}
+
+.remove-button {
+  padding: 2px;
+  min-width: 0;
+  min-height: 0;
+  margin: 6px;
+}
+
