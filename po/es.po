@@ -121,4 +121,4 @@ msgstr "Un nuevo fondo de pantalla dinámico ha sido creado"
 
 #: src/window.py:126
 msgid "translator-credits"
-msgstr "Brandon Sánchez | <spbrandonsteve@tutanota.com>"
+msgstr "Brandon Sánchez <spbrandonsteve@tutanota.com>"
