@@ -25,37 +25,41 @@
       </object>
     </child>
     <child>
-      <object class="AdwToastOverlay" id="toast_overlay">
+      <object class="GtkWindowHandle">
         <child>
-          <object class="GtkBox">
-            <property name="orientation">vertical</property>
-            <property name="valign">center</property>
-            <property name="spacing">48</property>
-            <property name="margin-top">36</property>
-            <property name="margin-end">36</property>
-            <property name="margin-bottom">36</property>
-            <property name="margin-start">36  </property>
+          <object class="AdwToastOverlay" id="toast_overlay">
             <child>
-              <object class="GtkEntry" id="name_entry">
-                <property name="placeholder-text" translatable="yes">Wallpaper name</property>
-                <property name="halign">center</property>
-              </object>
-            </child>
-            <child>
-              <object class="GtkBox" id="picker_buttons">
-                <property name="halign">center</property>
-                <property name="spacing">12</property>
-              </object>
-            </child>
-            <child>
-              <object class="GtkButton">
-                <property name="label" translatable="yes">Create</property>
-                <property name="halign">center</property>
-                <property name="action_name">win.create</property>
-                <style>
-                  <class name="suggested-action"/>
-                  <class name="pill"/>
-                </style>
+              <object class="GtkBox">
+                <property name="orientation">vertical</property>
+                <property name="valign">center</property>
+                <property name="spacing">48</property>
+                <property name="margin-top">36</property>
+                <property name="margin-end">36</property>
+                <property name="margin-bottom">36</property>
+                <property name="margin-start">36  </property>
+                <child>
+                  <object class="GtkEntry" id="name_entry">
+                    <property name="placeholder-text" translatable="yes">Wallpaper name</property>
+                    <property name="halign">center</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkBox" id="picker_buttons">
+                    <property name="halign">center</property>
+                    <property name="spacing">12</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkButton">
+                    <property name="label" translatable="yes">Create</property>
+                    <property name="halign">center</property>
+                    <property name="action_name">win.create</property>
+                    <style>
+                      <class name="suggested-action"/>
+                      <class name="pill"/>
+                    </style>
+                  </object>
+                </child>
               </object>
             </child>
           </object>
