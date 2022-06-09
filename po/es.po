@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the me.dusansimic.DynamicWallpaper package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Brandon Sánchez <spbrandonsteve@tutanota.com>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: me.dusansimic.DynamicWallpaper\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-27 18:54+0200\n"
+"PO-Revision-Date: 2022-06-07 19:34-0600\n"
+"Last-Translator: Brandon Sánchez <spbrandonsteve@tutanota.com>\n"
+"Language-Team: Spanish <spbrandonsteve@tutanota.com>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Gtranslator 40.0\n"
+
+#: data/me.dusansimic.DynamicWallpaper.desktop.in:3
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:8 src/window.py:123
+msgid "Dynamic Wallpaper"
+msgstr "Dynamic Wallpaper"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:9
+msgid "Dušan Simić"
+msgstr "Dušan Simić"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:10
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:16
+msgid "Dynamic wallpaper creator for Gnome 42"
+msgstr "Herramienta de creación de fondos de pantalla dinámicos para GNOME 42"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:20
+msgid "Main window light theme"
+msgstr "Tema claro de la ventana principal"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:24
+msgid "Main window dark theme"
+msgstr "Tema oscuro de la ventana principal"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:35
+msgid "First release 🥳"
+msgstr "Primer lanzamiento 🥳"
+
+#: src/wallpaper_picker.ui:14
+msgid "_Select wallpaper"
+msgstr "_Seleccionar fondo de pantalla"
+
+#: src/window.ui:40
+msgid "Wallpaper name"
+msgstr "Nombre de fondo de pantalla"
+
+#: src/window.ui:52
+msgid "Create"
+msgstr "Crear"
+
+#: src/window.ui:70
+msgid "_Keyboard Shortcuts"
+msgstr "_Atajos de Teclado"
+
+#: src/window.ui:74
+msgid "_About Dynamic Wallpaper"
+msgstr "_Acerca de Dynamic Wallpaper"
+
+#: src/gtk/help-overlay.ui:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr "General"
+
+#: src/gtk/help-overlay.ui:14
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Mostrar Atajos"
+
+#: src/gtk/help-overlay.ui:20
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Salir"
+
+#: src/wallpaper_picker.py:29
+msgid "PNG & JPEG"
+msgstr "PNG y JPEG"
+
+#: src/wallpaper_picker.py:34
+msgid "Select wallpaper"
+msgstr "Seleccionar fondo de pantalla"
+
+#: src/window.py:43
+msgid "Select light wallpaper"
+msgstr "Seleccionar fondo de pantalla claro"
+
+#: src/window.py:44
+msgid "Select dark wallpaper"
+msgstr "Seleccionar fondo de pantalla oscuro"
+
+#: src/window.py:58
+msgid "Wallpaper name not set"
+msgstr "El Nombre del fondo de pantalla no ha sido establecido"
+
+#: src/window.py:61
+msgid "Wallpaper name cannot contain null or /"
+msgstr "El nombre del fondo de pantalla no puede incluir null o /"
+
+#: src/window.py:68
+msgid "Wallpaper with the same name already exists"
+msgstr "Ya existe un fondo de pantalla con el mismo nombre"
+
+#: src/window.py:72
+msgid "Light mode wallpaper not selected"
+msgstr "El fondo de pantalla para el tema claro no ha sido seleccionado"
+
+#: src/window.py:76
+msgid "Dark mode wallpaper not selected"
+msgstr "El fondo de pantalla para el tema oscuro no ha sido seleccionado"
+
+#: src/window.py:91
+msgid "New dynamic wallpaper created"
+msgstr "Un nuevo fondo de pantalla dinámico ha sido creado"
+
+#: src/window.py:126
+msgid "translator-credits"
+msgstr "Brandon Sánchez <spbrandonsteve@tutanota.com>"
