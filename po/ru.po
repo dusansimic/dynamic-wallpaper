@@ -97,15 +97,15 @@ msgstr "Выберите темные обои"
 
 #: src/window.py:58
 msgid "Wallpaper name not set"
-msgstr "Название обои не установлено"
+msgstr "Имя обои не установлено"
 
 #: src/window.py:61
 msgid "Wallpaper name cannot contain null or /"
-msgstr "Название обои не может содержать null или /"
+msgstr "Имя обои не может содержать null или /"
 
 #: src/window.py:68
 msgid "Wallpaper with the same name already exists"
-msgstr "Обои с этим названием уже существует"
+msgstr "Обои с этим именем уже существует"
 
 #: src/window.py:72
 msgid "Light mode wallpaper not selected"
