@@ -42,7 +42,7 @@ msgstr "Темная тема главного окна"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:35
 msgid "First release 🥳"
-msgstr "Первый выпуск"
+msgstr "Первый выпуск 🥳"
 
 #: src/wallpaper_picker.ui:14
 msgid "_Select wallpaper"
