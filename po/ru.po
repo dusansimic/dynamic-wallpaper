@@ -34,11 +34,11 @@ msgstr "Создатель динамических обоев для Gnome 42"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:20
 msgid "Main window light theme"
-msgstr "Светлая тема главного окна"
+msgstr "Светлая тема для главного окна"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:24
 msgid "Main window dark theme"
-msgstr "Темная тема главного окна"
+msgstr "Темная тема для главного окна"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:35
 msgid "First release 🥳"
@@ -50,7 +50,7 @@ msgstr "_Выберите обои"
 
 #: src/window.ui:40
 msgid "Wallpaper name"
-msgstr "Имя обои"
+msgstr "Название обоев"
 
 #: src/window.ui:52
 msgid "Create"
@@ -62,7 +62,7 @@ msgstr "_Комбинации клавиш"
 
 #: src/window.ui:74
 msgid "_About Dynamic Wallpaper"
-msgstr "_О Dynamic Wallpaper"
+msgstr "_О Динамические обои"
 
 #: src/gtk/help-overlay.ui:11
 msgctxt "shortcut window"
@@ -97,23 +97,23 @@ msgstr "Выберите темные обои"
 
 #: src/window.py:58
 msgid "Wallpaper name not set"
-msgstr "Имя обои не установлено"
+msgstr "Название обоев не установлено"
 
 #: src/window.py:61
 msgid "Wallpaper name cannot contain null or /"
-msgstr "Имя обои не может содержать null или /"
+msgstr "Название обоев не может содержать null или /"
 
 #: src/window.py:68
 msgid "Wallpaper with the same name already exists"
-msgstr "Обои с этим именем уже существует"
+msgstr "Обои с этим названием уже существует"
 
 #: src/window.py:72
 msgid "Light mode wallpaper not selected"
-msgstr "Обои светлой темы не выбраны"
+msgstr "Обои для светлой темы не выбраны"
 
 #: src/window.py:76
 msgid "Dark mode wallpaper not selected"
-msgstr "Обои темной темы не выбраны"
+msgstr "Обои для темной темы не выбраны"
 
 #: src/window.py:91
 msgid "New dynamic wallpaper created"
