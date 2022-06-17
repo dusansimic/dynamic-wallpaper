@@ -101,7 +101,7 @@ msgstr "Jméno tapety není nastaveno"
 
 #: src/window.py:61
 msgid "Wallpaper name cannot contain null or /"
-msgstr "Jméno tapety nesmí obsahovat "null" nebo /"
+msgstr "Jméno tapety nesmí obsahovat 'null' nebo /"
 
 #: src/window.py:68
 msgid "Wallpaper with the same name already exists"
