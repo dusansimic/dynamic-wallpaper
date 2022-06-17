@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the me.dusansimic.DynamicWallpaper package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: me.dusansimic.DynamicWallpaper\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-27 18:54+0200\n"
+"PO-Revision-Date: 2022-04-28 17:07+0200\n"
+"Last-Translator: vikdevelop <suoer-vik1@protonmail.com>\n"
+"Language-Team: Czech\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: data/me.dusansimic.DynamicWallpaper.desktop.in:3
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:8 src/window.py:123
+msgid "Dynamic Wallpaper"
+msgstr "Dynamická tapeta"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:9
+msgid "Dušan Simić"
+msgstr "Dušan Simić"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:10
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:16
+msgid "Dynamic wallpaper creator for Gnome 42"
+msgstr "Vytváření dynamických tapet pro GNOME 42."
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:20
+msgid "Main window light theme"
+msgstr "Světlý motiv hlavního okna"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:24
+msgid "Main window dark theme"
+msgstr "Tmavý motiv hlavního okna"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:35
+msgid "First release 🥳"
+msgstr "První vydání 🥳"
+
+#: src/wallpaper_picker.ui:14
+msgid "_Select wallpaper"
+msgstr "_Vybrat tapetu"
+
+#: src/window.ui:40
+msgid "Wallpaper name"
+msgstr "Jméno tapety"
+
+#: src/window.ui:52
+msgid "Create"
+msgstr "Vytvořit"
+
+#: src/window.ui:70
+msgid "_Keyboard Shortcuts"
+msgstr "_Klávesové zkratky"
+
+#: src/window.ui:74
+msgid "_About Dynamic Wallpaper"
+msgstr "O Dynamic Wallapperu"
+
+#: src/gtk/help-overlay.ui:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Obecné"
+
+#: src/gtk/help-overlay.ui:14
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Zobrazit zkratky"
+
+#: src/gtk/help-overlay.ui:20
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Odejít"
+
+#: src/wallpaper_picker.py:29
+msgid "PNG & JPEG"
+msgstr "PNG a JPEG"
+
+#: src/wallpaper_picker.py:34
+msgid "Select wallpaper"
+msgstr "Vybrat tapetu"
+
+#: src/window.py:43
+msgid "Select light wallpaper"
+msgstr "Vybrat světlou tapetu"
+
+#: src/window.py:44
+msgid "Select dark wallpaper"
+msgstr "Vybrat tmavou tapetu"
+
+#: src/window.py:58
+msgid "Wallpaper name not set"
+msgstr "Jméno tapety není nastaveno"
+
+#: src/window.py:61
+msgid "Wallpaper name cannot contain null or /"
+msgstr "Jméno tapety nesmí obsahovat "null" nebo /"
+
+#: src/window.py:68
+msgid "Wallpaper with the same name already exists"
+msgstr "Tapeta se stejným jménem již existuje"
+
+#: src/window.py:72
+msgid "Light mode wallpaper not selected"
+msgstr "Světlý režim tapety není vybrán"
+
+#: src/window.py:76
+msgid "Dark mode wallpaper not selected"
+msgstr "Tmavý režim tapety není vybrán"
+
+#: src/window.py:91
+msgid "New dynamic wallpaper created"
+msgstr "Nová dynamická tapeta byla vytvořena"
+
+#: src/window.py:126
+msgid "translator-credits"
+msgstr "vikdevelop <super-vik1@protonmail.com>"
