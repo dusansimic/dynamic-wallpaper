@@ -1,27 +1,30 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Turkish translation for me.dusansimic.DynamicWallpaper
+#
+# Copyright (C) 2022 me.dusansimic.DynamicWallpaper'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the me.dusansimic.DynamicWallpaper package.
+#
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: me.dusansimic.DynamicWallpaper\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: https://github.com/dusansimic/dynamic-wallpaper/issues\n"
 "POT-Creation-Date: 2022-04-27 18:54+0200\n"
-"PO-Revision-Date: 2022-06-14 12:20+0300\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: tr_TR\n"
+"PO-Revision-Date: 2022-06-23 00:47+0300\n"
+"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
+"Language-Team: Turkish <gnome-turk@gnome.org>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 3.1\n"
+"X-Project-Style: gnome\n"
 
 #: data/me.dusansimic.DynamicWallpaper.desktop.in:3
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:8 src/window.py:123
 msgid "Dynamic Wallpaper"
-msgstr "Dinamik duvar kağıdı"
+msgstr "Dinamik Duvar Kağıdı"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:9
 msgid "Dušan Simić"
@@ -34,11 +37,11 @@ msgstr "Gnome 42 için dinamik duvar kağıdı oluşturucu"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:20
 msgid "Main window light theme"
-msgstr "Ana pencere aydınlık tema"
+msgstr "Ana pencere açık tema"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:24
 msgid "Main window dark theme"
-msgstr "Ana pencere karanlık tema"
+msgstr "Ana pencere koyu tema"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:35
 msgid "First release 🥳"
@@ -50,7 +53,7 @@ msgstr "_Duvar kağıdı seç"
 
 #: src/window.ui:40
 msgid "Wallpaper name"
-msgstr "Duvar kağıdı ismi"
+msgstr "Duvar kağıdı adı"
 
 #: src/window.ui:52
 msgid "Create"
@@ -58,11 +61,11 @@ msgstr "Oluştur"
 
 #: src/window.ui:70
 msgid "_Keyboard Shortcuts"
-msgstr "_Klavye kısayolları"
+msgstr "_Klavye Kısayolları"
 
 #: src/window.ui:74
 msgid "_About Dynamic Wallpaper"
-msgstr "_Dinamik wallpaper hakkında"
+msgstr "Dinamik Duvar Kağıdı _Hakkında"
 
 #: src/gtk/help-overlay.ui:11
 msgctxt "shortcut window"
@@ -72,12 +75,12 @@ msgstr "Genel"
 #: src/gtk/help-overlay.ui:14
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr "Kısayolları göster"
+msgstr "Kısayolları Göster"
 
 #: src/gtk/help-overlay.ui:20
 msgctxt "shortcut window"
 msgid "Quit"
-msgstr "Çıkış"
+msgstr "Çık"
 
 #: src/wallpaper_picker.py:29
 msgid "PNG & JPEG"
@@ -89,15 +92,15 @@ msgstr "Duvar kağıdı seç"
 
 #: src/window.py:43
 msgid "Select light wallpaper"
-msgstr "Aydınlık tema duvar kağıdı"
+msgstr "Açık tema duvar kağıdı"
 
 #: src/window.py:44
 msgid "Select dark wallpaper"
-msgstr "Karanlık tema duvar kağıdı"
+msgstr "Koyu tema duvar kağıdı"
 
 #: src/window.py:58
 msgid "Wallpaper name not set"
-msgstr "Duvar kağıdına bir isim verilmedi"
+msgstr "Duvar kağıdı adı ayarlanamadı"
 
 #: src/window.py:61
 msgid "Wallpaper name cannot contain null or /"
@@ -109,11 +112,11 @@ msgstr "Aynı ada sahip bir duvar kağıdı zaten var"
 
 #: src/window.py:72
 msgid "Light mode wallpaper not selected"
-msgstr "Aydınlık tema duvar kağıdı seçilmedi"
+msgstr "Açık tema duvar kağıdı seçilmedi"
 
 #: src/window.py:76
 msgid "Dark mode wallpaper not selected"
-msgstr "Karanlık tema duvar kağıdı seçilmedi"
+msgstr "Koyu tema duvar kağıdı seçilmedi"
 
 #: src/window.py:91
 msgid "New dynamic wallpaper created"
@@ -121,4 +124,6 @@ msgstr "Yeni dinamik duvar kağıdı oluşturuldu"
 
 #: src/window.py:126
 msgid "translator-credits"
-msgstr "_Furkan Aslan | NorthLight15"
+msgstr ""
+"Furkan Aslan | NorthLight15\n"
+"Sabri Ünal <libreajans@gmail.com>"
