@@ -30,6 +30,24 @@
     <control>pointing</control>
   </recommends>
   <releases>
+    <release version="0.0.3" date="2022-06-22">
+      <description>
+        <p>Window is now draggable from anywhere.</p>
+        <p>
+          Current icon is fixed to follow Gnome HIG (the one made by Rokwallaby
+          already did but I edited it) and a new nightly icon is made by
+          daudix-UFO based on the original one.
+        </p>
+        <p>Added and updated translations:</p>
+        <ul>
+          <li>Spanish</li>
+          <li>Persian</li>
+          <li>Russian</li>
+          <li>Turkish</li>
+          <li>Czech</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.0.2" date="2022-05-04">
       <description>
         <p>New translations and additional information in about dialog.</p>
