@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the me.dusansimic.DynamicWallpaper package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: me.dusansimic.DynamicWallpaper\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-27 18:54+0200\n"
+"PO-Revision-Date: 2022-06-23 15:54+0200\n"
+"Last-Translator: Irénée Thirion <irenee.thirion@e.email>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.1\n"
+
+#: data/me.dusansimic.DynamicWallpaper.desktop.in:3
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:8 src/window.py:123
+msgid "Dynamic Wallpaper"
+msgstr "Arrière-plan Dynamique"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:9
+msgid "Dušan Simić"
+msgstr "Dušan Simić"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:10
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:16
+msgid "Dynamic wallpaper creator for Gnome 42"
+msgstr "Créateur d’arrière-plans dynamiques pour GNOME 42"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:20
+msgid "Main window light theme"
+msgstr "Thème clair de la fenêtre principale"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:24
+msgid "Main window dark theme"
+msgstr "Thème sombre de la fenêtre principale"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:35
+msgid "First release 🥳"
+msgstr "Première version 🥳"
+
+#: src/wallpaper_picker.ui:14
+msgid "_Select wallpaper"
+msgstr "_Sélectionnez un arrière-plan"
+
+#: src/window.ui:40
+msgid "Wallpaper name"
+msgstr "Nom de l’arrière-plan"
+
+#: src/window.ui:52
+msgid "Create"
+msgstr "Créer"
+
+#: src/window.ui:70
+msgid "_Keyboard Shortcuts"
+msgstr "_Raccourcis clavier"
+
+#: src/window.ui:74
+msgid "_About Dynamic Wallpaper"
+msgstr "À _propos de Arrière-plan Dynamique"
+
+#: src/gtk/help-overlay.ui:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Général"
+
+#: src/gtk/help-overlay.ui:14
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Afficher les raccourcis"
+
+#: src/gtk/help-overlay.ui:20
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Quitter"
+
+#: src/wallpaper_picker.py:29
+msgid "PNG & JPEG"
+msgstr "PNG & JPEG"
+
+#: src/wallpaper_picker.py:34
+msgid "Select wallpaper"
+msgstr "Sélectionnez un arrière-plan"
+
+#: src/window.py:43
+msgid "Select light wallpaper"
+msgstr "Sélectionner un arrière-plan clair"
+
+#: src/window.py:44
+msgid "Select dark wallpaper"
+msgstr "Sélectionner un arrière-plan sombre"
+
+#: src/window.py:58
+msgid "Wallpaper name not set"
+msgstr "Nom de l’arrière-plan non défini"
+
+#: src/window.py:61
+msgid "Wallpaper name cannot contain null or /"
+msgstr "Le nom de l’arrière-plan ne peut contenir zéro ou /"
+
+#: src/window.py:68
+msgid "Wallpaper with the same name already exists"
+msgstr "Un arrière-plan avec le même nom existe déjà"
+
+#: src/window.py:72
+msgid "Light mode wallpaper not selected"
+msgstr "Arrière-plan de mode clair non sélectionné"
+
+#: src/window.py:76
+msgid "Dark mode wallpaper not selected"
+msgstr "Arrière-plan de mode sombre non sélectionné"
+
+#: src/window.py:91
+msgid "New dynamic wallpaper created"
+msgstr "Nouvel arrière-plan dynamique créé"
+
+#: src/window.py:126
+msgid "translator-credits"
+msgstr "Irénée Thirion"
