@@ -33,7 +33,7 @@ class DynamicWallpaperApplication(Adw.Application):
     def __init__(self):
         super().__init__(application_id='me.dusansimic.DynamicWallpaper',
                          flags=Gio.ApplicationFlags.FLAGS_NONE)
-        self.create_action('quit', self.quit, ['<primary>q'])
+        self.create_action('quit', self.on_quit_action, ['<primary>q'])
         self.create_action('about', self.on_about_action)
 
     def do_activate(self):
@@ -46,6 +46,10 @@ class DynamicWallpaperApplication(Adw.Application):
         if not win:
             win = DynamicWallpaperWindow(application=self)
         win.present()
+
+    def on_quit_action(self, widget, _):
+        """Callback for the app.quit acgtion."""
+        self.quit()
 
     def on_about_action(self, widget, _):
         """Callback for the app.about action."""
