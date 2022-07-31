@@ -1,17 +1,20 @@
-from gi.repository import Gtk
+from gi.repository import Gtk, Adw
 
-class AboutDialog(Gtk.AboutDialog):
+class AboutDialog(Adw.AboutWindow):
 
     def __init__(self, parent):
-        Gtk.AboutDialog.__init__(self)
-        self.props.program_name = _('Dynamic Wallpaper')
-        self.props.version = '@VERSION@'
-        self.props.authors = ['Dušan Simić']
-        self.props.translator_credits = _('translator-credits')
+        Adw.AboutWindow.__init__(self)
+        self.props.application_icon = '@app_id@'
+        self.props.application_name = _('Dynamic Wallpaper')
+        self.props.artists = ['Rokwallaby', 'David Lapshin <ddaudix@gmail.com>']
         self.props.copyright = '© 2022 Dušan Simić'
+        self.props.developer_name = 'Dušan Simić'
+        self.props.developers = ['Dušan Simić <dusan.simic1810@gmail.com>', 'Mattia B']
         self.props.license_type = Gtk.License(Gtk.License.GPL_2_0)
+        self.props.translator_credits = _('translator-credits')
+        self.props.version = '@VERSION@'
         self.props.website = 'https://github.com/dusansimic/dynamic-wallpaper'
-        self.props.logo_icon_name = '@app_id@'
-        self.props.modal = True
+        self.set_transient_for(parent)
+
         self.set_transient_for(parent)
 

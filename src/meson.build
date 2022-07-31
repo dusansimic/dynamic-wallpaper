@@ -42,7 +42,7 @@ dynamic_wallpaper_sources = [
 
 dependencies = [
 	dependency('gtk4'),
-	dependency('libadwaita-1'),
+	dependency('libadwaita-1', version: '>= 1.2.alpha'),
 ]
 
 install_data(dynamic_wallpaper_sources, install_dir: moduledir)
