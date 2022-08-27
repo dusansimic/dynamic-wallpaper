@@ -2,12 +2,15 @@
 # Copyright (C) 2022 me.dusansimic.DynamicWallpaper's COPYRIGHT HOLDER
 # This file is distributed under the same license as the me.dusansimic.DynamicWallpaper package.
 #
+# Furkan Aslan | NorthLight07, 2022
+# Sabri Ünal <libreajans@gmail.com>, 2022
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: me.dusansimic.DynamicWallpaper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-27 18:54+0200\n"
-"PO-Revision-Date: 2022-08-03 01:06+0300\n"
+"PO-Revision-Date: 2022-08-27 12:25+0300\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <gnome-turk@gnome.org>\n"
 "Language: tr\n"
@@ -16,6 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 3.1.1\n"
+"X-Project-Style: gnome\n"
 
 #: data/me.dusansimic.DynamicWallpaper.desktop.in:3
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:8 src/window.py:123
@@ -33,11 +37,11 @@ msgstr "Gnome 42 için dinamik duvar kağıdı oluşturucu"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:20
 msgid "Main window light theme"
-msgstr "Ana pencere aydınlık tema"
+msgstr "Ana pencere açık tema"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:24
 msgid "Main window dark theme"
-msgstr "Ana pencere karanlık tema"
+msgstr "Ana pencere koyu tema"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:35
 msgid "First release 🥳"
@@ -92,7 +96,7 @@ msgstr "Açık duvar kağıdı"
 
 #: src/window.py:44
 msgid "Select dark wallpaper"
-msgstr "Karanlık duvar kağıdı"
+msgstr "Koyu duvar kağıdı"
 
 #: src/window.py:58
 msgid "Wallpaper name not set"
@@ -121,5 +125,5 @@ msgstr "Yeni dinamik duvar kağıdı oluşturuldu"
 #: src/window.py:126
 msgid "translator-credits"
 msgstr ""
-"Furkan Aslan | NorthLight15\n"
+"Furkan Aslan | NorthLight07\n"
 "Sabri Ünal <libreajans@gmail.com>"
