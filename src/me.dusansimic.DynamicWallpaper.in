@@ -24,6 +24,7 @@ import signal
 import locale
 import gettext
 
+APP_ID = '@app_id@'
 VERSION = '@VERSION@'
 pkgdatadir = '@pkgdatadir@'
 localedir = '@localedir@'
@@ -42,4 +43,4 @@ if __name__ == '__main__':
     resource._register()
 
     from dynamic_wallpaper import main
-    sys.exit(main.main(VERSION))
+    sys.exit(main.main(APP_ID, VERSION))

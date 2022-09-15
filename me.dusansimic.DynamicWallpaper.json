@@ -31,8 +31,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/libadwaita.git",
-                    "tag": "1.2.alpha",
-                    "commit": "9150f4016a04064a00733b78391c8e6aad49bee8"
+                    "tag": "1.2.0",
+                    "commit": "a905117bd2150de9e85d65f8cdce8d8fb001b89e"
                 }
             ],
             "modules": [

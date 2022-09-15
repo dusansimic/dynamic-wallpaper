@@ -24,17 +24,17 @@ gi.require_version('Adw', '1')
 
 from gi.repository import Gtk, Gio, Adw
 from .window import DynamicWallpaperWindow
-from .about_dialog import AboutDialog
-
 
 class DynamicWallpaperApplication(Adw.Application):
     """The main application singleton class."""
 
-    def __init__(self):
-        super().__init__(application_id='me.dusansimic.DynamicWallpaper',
+    def __init__(self, app_id, version):
+        super().__init__(application_id=app_id,
                          flags=Gio.ApplicationFlags.FLAGS_NONE)
         self.create_action('quit', self.on_quit_action, ['<primary>q'])
         self.create_action('about', self.on_about_action)
+        self._app_id = app_id
+        self._version = version
 
     def do_activate(self):
         """Called when the application is activated.
@@ -51,9 +51,32 @@ class DynamicWallpaperApplication(Adw.Application):
         """Callback for the app.quit acgtion."""
         self.quit()
 
-    def on_about_action(self, widget, _):
+    # I'm not sure what's passed here as an argument
+    def on_about_action(self, _action, _none):
         """Callback for the app.about action."""
-        about = AboutDialog(self.props.active_window)
+        artists = [
+          'Rokwallaby',
+          'David Lapshin <ddaudix@gmail.com>'
+        ]
+
+        developers = [
+          'Dušan Simić <dusan.simic1810@gmail.com>',
+          'Mattia B'
+        ]
+
+        about = Adw.AboutWindow(
+          application_name = _('Dynamic Wallpaper'),
+          application_icon = self._app_id,
+          version = self._version,
+          copyright = '© 2022 Dušan Simić',
+          website = 'https://github.com/dusansimic/dynamic-wallpaper',
+          license_type = Gtk.License(Gtk.License.GPL_2_0),
+          developer_name = 'Dušan Simić',
+          developers = developers,
+          artists = artists,
+          translator_credits = _('translator-credits'),
+          transient_for = self.props.active_window,
+        )
         about.present()
 
     def create_action(self, name, callback, shortcuts=None):
@@ -72,7 +95,7 @@ class DynamicWallpaperApplication(Adw.Application):
             self.set_accels_for_action(f"app.{name}", shortcuts)
 
 
-def main(version):
+def main(app_id, version):
     """The application's entry point."""
-    app = DynamicWallpaperApplication()
+    app = DynamicWallpaperApplication(app_id, version)
     return app.run(sys.argv)

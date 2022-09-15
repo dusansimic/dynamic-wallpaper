@@ -26,18 +26,11 @@ configure_file(
   install_dir: get_option('bindir')
 )
 
-about_dialog_file = configure_file(
-	input: 'about_dialog.py.in',
-	output: 'about_dialog.py',
-	configuration: conf
-)
-
 dynamic_wallpaper_sources = [
   '__init__.py',
   'main.py',
   'window.py',
   'wallpaper_picker.py',
-  about_dialog_file,
 ]
 
 dependencies = [
