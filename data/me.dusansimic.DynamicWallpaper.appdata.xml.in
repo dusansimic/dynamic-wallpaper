@@ -30,6 +30,22 @@
     <control>pointing</control>
   </recommends>
   <releases>
+    <release version="0.0.4" date="2022-09-22">
+      <description>
+        <p>Bug fixes:</p>
+        <ul>
+          <li>Fix quit keyboard shortcut</li>
+        </ul>
+        <p>Added translations:</p>
+        <ul>
+          <li>French</li>
+        </ul>
+        <p>Updated translations:</p>
+        <ul>
+          <li>Turkish</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.0.3" date="2022-06-22">
       <description>
         <p>Window is now draggable from anywhere.</p>
