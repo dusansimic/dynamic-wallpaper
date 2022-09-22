@@ -71,6 +71,7 @@ class DynamicWallpaperApplication(Adw.Application):
           copyright = '© 2022 Dušan Simić',
           website = 'https://github.com/dusansimic/dynamic-wallpaper',
           license_type = Gtk.License(Gtk.License.GPL_2_0),
+          issue_url = 'https://github.com/dusansimic/dynamic-wallpaper/issues/new/choose',
           developer_name = 'Dušan Simić',
           developers = developers,
           artists = artists,
