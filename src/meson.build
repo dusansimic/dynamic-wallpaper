@@ -31,6 +31,7 @@ dynamic_wallpaper_sources = [
   'main.py',
   'window.py',
   'wallpaper_picker.py',
+  'gdwFileRow.py',
 ]
 
 dependencies = [

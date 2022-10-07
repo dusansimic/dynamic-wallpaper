@@ -3,6 +3,7 @@
   <gresource prefix="/me/dusansimic/DynamicWallpaper">
     <file>window.ui</file>
     <file>wallpaper_picker.ui</file>
+    <file>gdw-file-row.ui</file>
     <file>gtk/help-overlay.ui</file>
   </gresource>
 </gresources>

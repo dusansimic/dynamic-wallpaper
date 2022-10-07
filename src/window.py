@@ -17,7 +17,7 @@
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
 from gi.repository import Gtk, Adw, Gio
-from .wallpaper_picker import WallpaperPicker
+from .gdwFileRow import FileRow
 import os
 import shutil
 import xml.etree.cElementTree as ET
@@ -27,24 +27,22 @@ import xml.etree.cElementTree as ET
 class DynamicWallpaperWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'DynamicWallpaperWindow'
 
-    wallpaper_name = None
-
     toast_overlay = Gtk.Template.Child()
-    name_entry = Gtk.Template.Child()
-    picker_buttons = Gtk.Template.Child()
+    input_rows = Gtk.Template.Child()
+    entry_name = Gtk.Template.Child()
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
         self._setup_actions()
 
-        self.name_entry.grab_focus()
+        self.entry_name.grab_focus()
 
-        self.light_picker = WallpaperPicker(self, _('Select light wallpaper'))
-        self.dark_picker = WallpaperPicker(self, _('Select dark wallpaper'))
+        self.file_light = FileRow(self, _('Light wallpaper'))
+        self.file_dark = FileRow(self, _('Dark wallpaper'))
 
-        self.picker_buttons.append(self.light_picker)
-        self.picker_buttons.append(self.dark_picker)
+        self.input_rows.add(self.file_light)
+        self.input_rows.add(self.file_dark)
 
     def _setup_actions(self):
         _create_action = Gio.SimpleAction.new('create', None)
@@ -52,41 +50,43 @@ class DynamicWallpaperWindow(Gtk.ApplicationWindow):
         self.add_action(_create_action)
 
     def _on_create_action(self, _action, _param):
-        self.wallpaper_name = self.name_entry.get_text().strip()
+        wp_name = self.entry_name.get_text().strip()
 
-        if self.wallpaper_name == "":
+        if wp_name == "":
             self.toast_overlay.add_toast(Adw.Toast.new(_('Wallpaper name not set')))
             return
-        elif not self._filename_valid(self.wallpaper_name):
+        elif not self._filename_valid(wp_name):
             self.toast_overlay.add_toast(Adw.Toast.new(_('Wallpaper name cannot contain null or /')))
             return
 
         data_dir = os.path.join(os.environ.get('HOME'), '.local', 'share')
-        wall_dir = os.path.join(data_dir, 'backgrounds', self.wallpaper_name)
-        xml_path = os.path.join(data_dir, 'gnome-background-properties', '{}.xml'.format(self.wallpaper_name))
+        wall_dir = os.path.join(data_dir, 'backgrounds', wp_name)
+        xml_path = os.path.join(data_dir, 'gnome-background-properties', '{}.xml'.format(wp_name))
         if any(map(os.path.exists, [wall_dir, xml_path])):
             self.toast_overlay.add_toast(Adw.Toast.new(_('Wallpaper with the same name already exists')))
             return
 
-        if (self.light_picker.wallpaper == None):
+        light_path = self.file_light.wp_file.path
+        dark_path = self.file_dark.wp_file.path
+
+        if (light_path == "" or not os.path.exists(light_path)):
             self.toast_overlay.add_toast(Adw.Toast.new(_('Light mode wallpaper not selected')))
             return
-
-        if (self.dark_picker.wallpaper == None):
+        if (dark_path == "" or not os.path.exists(dark_path)):
             self.toast_overlay.add_toast(Adw.Toast.new(_('Dark mode wallpaper not selected')))
             return
 
         data_dir = os.path.join(os.environ.get('HOME'), '.local', 'share')
         props_dir = os.path.join(data_dir, 'gnome-background-properties')
-        bgs_dir = os.path.join(data_dir, 'backgrounds', self.wallpaper_name)
+        bgs_dir = os.path.join(data_dir, 'backgrounds', wp_name)
 
-        l_wall_path = os.path.join(bgs_dir, "{}-l{}".format(self.wallpaper_name, self.light_picker.wallpaper.extension))
-        d_wall_path = os.path.join(bgs_dir, "{}-d{}".format(self.wallpaper_name, self.dark_picker.wallpaper.extension))
-        xml_path = os.path.join(props_dir, "{}.xml".format(self.wallpaper_name))
+        l_wall_path = os.path.join(bgs_dir, "{}-l{}".format(wp_name, self.file_light.wp_file.ext))
+        d_wall_path = os.path.join(bgs_dir, "{}-d{}".format(wp_name, self.file_dark.wp_file.ext))
+        xml_path = os.path.join(props_dir, "{}.xml".format(wp_name))
 
         self._make_dirs(props_dir, bgs_dir)
         self._copy_wallpapers(l_wall_path, d_wall_path)
-        self._write_xml(l_wall_path, d_wall_path, xml_path)
+        self._write_xml(wp_name, l_wall_path, d_wall_path, xml_path)
 
         self.toast_overlay.add_toast(Adw.Toast.new(_('New dynamic wallpaper created')))
 
@@ -95,13 +95,13 @@ class DynamicWallpaperWindow(Gtk.ApplicationWindow):
         os.makedirs(bgs_dir, exist_ok=True)
 
     def _copy_wallpapers(self, l_wall_path, d_wall_path):
-        shutil.copyfile(self.light_picker.wallpaper.path, l_wall_path)
-        shutil.copyfile(self.dark_picker.wallpaper.path, d_wall_path)
+        shutil.copyfile(self.file_light.wp_file.path, l_wall_path)
+        shutil.copyfile(self.file_dark.wp_file.path, d_wall_path)
 
-    def _write_xml(self, l_wall_path, d_wall_path, xml_path):
+    def _write_xml(self, wp_name, l_wall_path, d_wall_path, xml_path):
         tree = ET.Element('wallpapers')
         wallpaper = ET.SubElement(tree, 'wallpaper', {'deleted': 'false'})
-        ET.SubElement(wallpaper, 'name').text = self.wallpaper_name
+        ET.SubElement(wallpaper, 'name').text = wp_name
         ET.SubElement(wallpaper, 'filename').text = l_wall_path
         ET.SubElement(wallpaper, 'filename-dark').text = d_wall_path
         ET.SubElement(wallpaper, 'options').text = 'zoom'
