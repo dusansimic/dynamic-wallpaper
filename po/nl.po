@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: me.dusansimic.DynamicWallpaper\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-27 18:54+0200\n"
-"PO-Revision-Date: 2022-04-28 17:07+0200\n"
+"Report-Msgid-Bugs-To: dusan.simic1810@gmail.com\n"
+"POT-Creation-Date: 2022-10-11 14:32+0200\n"
+"PO-Revision-Date: 2022-10-11 18:10+0200\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -16,10 +16,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.1.1\n"
 
 #: data/me.dusansimic.DynamicWallpaper.desktop.in:3
-#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:8 src/window.py:123
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:8 src/window.ui:13
+#: src/main.py:68
 msgid "Dynamic Wallpaper"
 msgstr "Dynamische achtergrond"
 
@@ -41,26 +42,110 @@ msgid "Main window dark theme"
 msgstr "Hoofdvenster met donker thema"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:35
+msgid "Bug fixes:"
+msgstr "Opgelost:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:37
+msgid "Fix quit keyboard shortcut"
+msgstr "Sneltoets om af te sluiten"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:39
+msgid "Added translations:"
+msgstr "Nieuwe vertalingen:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:41
+msgid "French"
+msgstr "Frans"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:43
+msgid "Updated translations:"
+msgstr "Bijgewerkte vertalingen:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:45
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:62
+msgid "Turkish"
+msgstr "Turks"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:51
+msgid "Window is now draggable from anywhere."
+msgstr "Het venster kan voortaan overal vandaan worden versleept."
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:52
+msgid ""
+"Current icon is fixed to follow Gnome HIG (the one made by Rokwallaby "
+"already did but I edited it) and a new nightly icon is made by daudix-UFO "
+"based on the original one."
+msgstr ""
+"Het huidige pictogram volgt de GNOME HIG (die van Rokwallaby deed dat al, "
+"maar ik heb hem bewerkt) en er is een nieuw pictogram voor instabiele "
+"versies met dank aan daudix-UFO."
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:57
+msgid "Added and updated translations:"
+msgstr "Nieuwe en bijgewerkte vertalingen:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:59
+msgid "Spanish"
+msgstr "Spaans"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:60
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:72
+msgid "Persian"
+msgstr "Perzisch"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:61
+msgid "Russian"
+msgstr "Russisch"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:63
+msgid "Czech"
+msgstr "Tsjechisch"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:69
+msgid "New translations and additional information in about dialog."
+msgstr "Nieuwe vertalingen en aanvullende informatie op het venster ‘Over’."
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:70
+msgid "Translated to:"
+msgstr "Beschikbaar in het:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:73
+msgid "Italian"
+msgstr "Italiaans"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:74
+msgid "Dutch"
+msgstr "Nederlands"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:75
+msgid "Occitan"
+msgstr "Occitaans"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:76
+msgid "Brazilian Portugese"
+msgstr "Braziliaans-Portugees"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:82
 msgid "First release 🥳"
 msgstr "De allereerste versie! 🥳"
 
-#: src/wallpaper_picker.ui:14
-msgid "_Select wallpaper"
-msgstr "Kie_s een achtergrond"
-
-#: src/window.ui:40
-msgid "Wallpaper name"
-msgstr "Achtergrondnaam"
-
-#: src/window.ui:52
+#: src/window.ui:22
 msgid "Create"
 msgstr "Maken"
 
-#: src/window.ui:70
+#: src/window.ui:23
+msgid "Create Dynamic Wallpaper"
+msgstr "Dynamische achtergrond samenstellen"
+
+#: src/window.ui:55
+msgid "Name"
+msgstr "Naam"
+
+#: src/window.ui:74
 msgid "_Keyboard Shortcuts"
 msgstr "_Sneltoetsen"
 
-#: src/window.ui:74
+#: src/window.ui:78
 msgid "_About Dynamic Wallpaper"
 msgstr "Over Dyn_amische achtergrond"
 
@@ -79,35 +164,39 @@ msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Afsluiten"
 
-#: src/wallpaper_picker.py:29
+#: src/gdwFileRow.py:26
 msgid "PNG & JPEG"
 msgstr "Png en jpeg"
 
-#: src/wallpaper_picker.py:34
+#: src/gdwFileRow.py:31
 msgid "Select wallpaper"
 msgstr "Kies een achtergrond"
 
-#: src/window.py:43
-msgid "Select light wallpaper"
-msgstr "Kies een lichte achtergrond"
+#: src/main.py:78
+msgid "translator-credits"
+msgstr "Heimen Stoffels <vistausss@fastmail.com>"
 
-#: src/window.py:44
-msgid "Select dark wallpaper"
-msgstr "Kies een donkere achtergrond"
+#: src/window.py:41
+msgid "Light wallpaper"
+msgstr "Lichte achtergrond"
 
-#: src/window.py:58
+#: src/window.py:42
+msgid "Dark wallpaper"
+msgstr "Donkere achtergrond"
+
+#: src/window.py:56
 msgid "Wallpaper name not set"
 msgstr "Voer een achtergrondnaam in"
 
-#: src/window.py:61
+#: src/window.py:59
 msgid "Wallpaper name cannot contain null or /"
 msgstr "De naam mag niet het woord ‘null’ of het leesteken ‘/’ bevatten"
 
-#: src/window.py:68
+#: src/window.py:66
 msgid "Wallpaper with the same name already exists"
 msgstr "Er is al een achtergrond met deze naam"
 
-#: src/window.py:72
+#: src/window.py:73
 msgid "Light mode wallpaper not selected"
 msgstr "U heeft geen lichte achtergrond gekozen"
 
@@ -119,6 +208,8 @@ msgstr "U heeft geen donkere achtergrond gekozen"
 msgid "New dynamic wallpaper created"
 msgstr "De dynamische achtergrond is samengesteld"
 
-#: src/window.py:126
-msgid "translator-credits"
-msgstr "Heimen Stoffels <vistausss@fastmail.com>"
+#~ msgid "_Select wallpaper"
+#~ msgstr "Kie_s een achtergrond"
+
+#~ msgid "Wallpaper name"
+#~ msgstr "Achtergrondnaam"
