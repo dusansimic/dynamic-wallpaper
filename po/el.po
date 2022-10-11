@@ -1,0 +1,212 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Dušan Simić <dusan.simic1810@gmail.com>
+# This file is distributed under the same license as the Dynamic Wallpaper package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Konstantinos Megas <@nextdoorpanda>, 2022
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Dynamic Wallpaper 0.4.0\n"
+"Report-Msgid-Bugs-To: dusan.simic1810@gmail.com\n"
+"POT-Creation-Date: 2022-10-11 14:32+0200\n"
+"PO-Revision-Date: 2022-10-11 17:24+0300\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: el\n"
+
+#: data/me.dusansimic.DynamicWallpaper.desktop.in:3
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:8 src/window.ui:13
+#: src/main.py:68
+msgid "Dynamic Wallpaper"
+msgstr "Dynamic Wallpaper"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:9
+msgid "Dušan Simić"
+msgstr "Dušan Simić"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:10
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:16
+msgid "Dynamic wallpaper creator for Gnome 42"
+msgstr "Δημιουργός Δυναμικών Φόντων για το Gnome 42"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:20
+msgid "Main window light theme"
+msgstr "Φωτεινό θέμα κεντρικού παραθύρου"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:24
+msgid "Main window dark theme"
+msgstr "Σκοτεινό θέμα κεντρικού παραθύρου"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:35
+msgid "Bug fixes:"
+msgstr "Διορθώσεις σφαλμάτων:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:37
+msgid "Fix quit keyboard shortcut"
+msgstr "Διορθώθηκε η συντόμευση πληκτρολογίου για έξοδο"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:39
+msgid "Added translations:"
+msgstr "Μεταφράσεις που προστέθηκαν:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:41
+msgid "French"
+msgstr "French"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:43
+msgid "Updated translations:"
+msgstr "Μεταφράσεις που ενημερώθηκαν:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:45
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:62
+msgid "Turkish"
+msgstr "Turkish"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:51
+msgid "Window is now draggable from anywhere."
+msgstr "Πλέον το παράθυρο μπορεί να μετακινηθεί από οπουδήποτε."
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:52
+msgid ""
+"Current icon is fixed to follow Gnome HIG (the one made by Rokwallaby "
+"already did but I edited it) and a new nightly icon is made by daudix-UFO "
+"based on the original one."
+msgstr ""
+"Το παρόν εικονίδιο έχει ορισθεί να ακολουθεί το Gnome HIG (αυτό που "
+"δημιουργήθηκε από το χρήστη Rokwallaby το έκανε ήδη αλλά το επεξεργάστηκα "
+"κι εγώ) και το νέο νυχτερινό εικονίδιο δημιουργήθηκε από το χρήστη daudix-"
+"UFO, βασισμένο στο πρωτότυπο."
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:57
+msgid "Added and updated translations:"
+msgstr "Μεταφράσεις που προστέθηκαν ή ενημερώθηκαν:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:59
+msgid "Spanish"
+msgstr "Spanish"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:60
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:72
+msgid "Persian"
+msgstr "Persian"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:61
+msgid "Russian"
+msgstr "Russian"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:63
+msgid "Czech"
+msgstr "Czech"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:69
+msgid "New translations and additional information in about dialog."
+msgstr ""
+"Νέες μεταφράσεις και πρόσθετες πληροφορίες στο παράθυρο διαλόγου Περί."
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:70
+msgid "Translated to:"
+msgstr "Μεταφράστηκε σε:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:73
+msgid "Italian"
+msgstr "Italian"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:74
+msgid "Dutch"
+msgstr "Dutch"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:75
+msgid "Occitan"
+msgstr "Occitan"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:76
+msgid "Brazilian Portugese"
+msgstr "Brazilian Portugese"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:82
+msgid "First release 🥳"
+msgstr "Πρώτη έκδοση 🥳"
+
+#: src/window.ui:22
+msgid "Create"
+msgstr "Δημιουργία"
+
+#: src/window.ui:23
+msgid "Create Dynamic Wallpaper"
+msgstr "Δημιουργία Δυναμικού Φόντου"
+
+#: src/window.ui:55
+msgid "Name"
+msgstr "Όνομα"
+
+#: src/window.ui:74
+msgid "_Keyboard Shortcuts"
+msgstr "_Συντομεύσεις Πληκτρολογίου"
+
+#: src/window.ui:78
+msgid "_About Dynamic Wallpaper"
+msgstr "_Περί του Dynamic Wallpaper"
+
+#: src/gtk/help-overlay.ui:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Γενικά"
+
+#: src/gtk/help-overlay.ui:14
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Εμφάνιση Συντομεύσεων"
+
+#: src/gtk/help-overlay.ui:20
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Έξοδος"
+
+#: src/gdwFileRow.py:26
+msgid "PNG & JPEG"
+msgstr "PNG & JPEG"
+
+#: src/gdwFileRow.py:31
+msgid "Select wallpaper"
+msgstr "Επιλογή φόντου"
+
+#: src/main.py:78
+msgid "translator-credits"
+msgstr "Konstantinos Megas <@nextdoorpanda>"
+
+#: src/window.py:41
+msgid "Light wallpaper"
+msgstr "Φωτεινό φόντο"
+
+#: src/window.py:42
+msgid "Dark wallpaper"
+msgstr "Σκοτεινό φόντο"
+
+#: src/window.py:56
+msgid "Wallpaper name not set"
+msgstr "Δεν ορίσθηκε όνομα φόντου"
+
+#: src/window.py:59
+msgid "Wallpaper name cannot contain null or /"
+msgstr "Το όνομα φόντου δεν μπορεί να είναι κενό null ή να περιέχει /"
+
+#: src/window.py:66
+msgid "Wallpaper with the same name already exists"
+msgstr "Υπάρχει ήδη φόντο με το ίδιο όνομα"
+
+#: src/window.py:73
+msgid "Light mode wallpaper not selected"
+msgstr "Δεν επιλέχθηκε φόντο φωτεινού θέματος"
+
+#: src/window.py:76
+msgid "Dark mode wallpaper not selected"
+msgstr "Δεν επιλέχθηκε φόντο σκοτεινού θέματος"
+
+#: src/window.py:91
+msgid "New dynamic wallpaper created"
+msgstr "Δημιουργήθηκε νέο δυναμικό φόντο"
