@@ -1,9 +1,10 @@
 data/me.dusansimic.DynamicWallpaper.desktop.in
 data/me.dusansimic.DynamicWallpaper.appdata.xml.in
 data/me.dusansimic.DynamicWallpaper.gschema.xml
-src/wallpaper_picker.ui
+src/gdw-file-row.ui
 src/window.ui
 src/gtk/help-overlay.ui
-src/wallpaper_picker.py
+src/gdwFileRow.py
+src/main.py
 src/window.py
 
