@@ -40,6 +40,63 @@ msgstr "Světlý motiv hlavního okna"
 msgid "Main window dark theme"
 msgstr "Tmavý motiv hlavního okna"
 
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:51
+msgid "Window is now draggable from anywhere."
+msgstr "Okno lze nyní přetáhnout odkudkoli."
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:52
+msgid ""
+"Current icon is fixed to follow Gnome HIG (the one made by Rokwallaby "
+"already did but I edited it) and a new nightly icon is made by daudix-UFO "
+"based on the original one."
+msgstr ""Aktuální ikona je opravena tak, aby se řídila Gnome HIG (ta, kterou vytvořil Rokwallaby, "
+"již byla, ale upravil jsem ji) a nová noční ikona je vytvořena daudix-UFO ""
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:57
+msgid "Added and updated translations:"
+msgstr "Přidány a aktualizovány překlady:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:59
+msgid "Spanish"
+msgstr "Španělština"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:60
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:72
+msgid "Persian"
+msgstr "Perština"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:61
+msgid "Russian"
+msgstr "Ruština"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:63
+msgid "Czech"
+msgstr "Čeština"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:69
+msgid "New translations and additional information in about dialog."
+msgstr "Nové překlady a dodatečné informace v dialogu O programu."
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:70
+msgid "Translated to:"
+msgstr "Přeloženo do"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:73
+msgid "Italian"
+msgstr "Italštiny"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:74
+msgid "Dutch"
+msgstr "Holandštiny"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:75
+msgid "Occitan"
+msgstr "Okcitánštiny"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:76
+msgid "Brazilian Portugese"
+msgstr "Brazilské portugalštiny"
+
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:35
 msgid "First release 🥳"
 msgstr "První vydání 🥳"
@@ -50,7 +107,7 @@ msgstr "_Vybrat tapetu"
 
 #: src/window.ui:40
 msgid "Wallpaper name"
-msgstr "Jméno tapety"
+msgstr "Název tapety"
 
 #: src/window.ui:52
 msgid "Create"
@@ -62,7 +119,7 @@ msgstr "_Klávesové zkratky"
 
 #: src/window.ui:74
 msgid "_About Dynamic Wallpaper"
-msgstr "O Dynamic Wallapperu"
+msgstr "O aplikaci Dynamická tapeta"
 
 #: src/gtk/help-overlay.ui:11
 msgctxt "shortcut window"
@@ -122,3 +179,35 @@ msgstr "Nová dynamická tapeta byla vytvořena"
 #: src/window.py:126
 msgid "translator-credits"
 msgstr "vikdevelop <super-vik1@protonmail.com>"
+
+#: src/window.py:41
+msgid "Light wallpaper"
+msgstr "Světlá tapeta"
+
+#: src/window.py:42
+msgid "Dark wallpaper"
+msgstr "Tmavá tapeta"
+
+#: src/window.py:56
+msgid "Wallpaper name not set"
+msgstr "Název tapety není nastaveno"
+
+#: src/window.py:59
+msgid "Wallpaper name cannot contain null or /"
+msgstr "Název tapety nesmí obsahovat nulu nebo /"
+
+#: src/window.py:66
+msgid "Wallpaper with the same name already exists"
+msgstr "Tapeta se stejným názvem již exituje"
+
+#: src/window.py:73
+msgid "Light mode wallpaper not selected"
+msgstr "Tapeta světlého režimu není vybrána"
+
+#: src/window.py:76
+msgid "Dark mode wallpaper not selected"
+msgstr "Tapeta tmavého režimu není vybrána"
+
+#: src/window.py:91
+msgid "New dynamic wallpaper created"
+msgstr "Nová dynamická tapeta byla vytvořena"
