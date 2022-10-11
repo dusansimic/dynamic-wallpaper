@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR Dušan Simić <dusan.simic1810@gmail.com>
 # This file is distributed under the same license as the Dynamic Wallpaper package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Aleksa Ognjanovic <alexa.ognjanovic@protonmail.com>, 2022.
 #
 #, fuzzy
 msgid ""
@@ -10,9 +10,9 @@ msgstr ""
 "Report-Msgid-Bugs-To: dusan.simic1810@gmail.com\n"
 "POT-Creation-Date: 2022-10-11 14:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Last-Translator: Aleksa Ognjanovic <alexa.ognjanovic@protonmail.com>\n"
+"Language-Team: \n"
+"Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
