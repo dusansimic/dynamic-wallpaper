@@ -1,24 +1,25 @@
-# SOME DESCRIPTIVE TITLE.
+# Translation in languedocian Occitan
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the me.dusansimic.DynamicWallpaper package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Quentin PAGÈS, 2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: me.dusansimic.DynamicWallpaper\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-27 18:54+0200\n"
-"PO-Revision-Date: 2022-04-30 12:58+0200\n"
+"Report-Msgid-Bugs-To: dusan.simic1810@gmail.com\n"
+"POT-Creation-Date: 2022-10-11 14:32+0200\n"
+"PO-Revision-Date: 2022-10-12 09:31+0200\n"
 "Last-Translator: Quentin PAGÈS\n"
 "Language-Team: \n"
 "Language: oc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.1.1\n"
 
 #: data/me.dusansimic.DynamicWallpaper.desktop.in:3
-#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:8 src/window.py:123
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:8 src/window.ui:13
+#: src/main.py:68
 msgid "Dynamic Wallpaper"
 msgstr "Papièrs pintrats dinamics"
 
@@ -40,26 +41,112 @@ msgid "Main window dark theme"
 msgstr "Fenèstra principala en tèma escur"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:35
+msgid "Bug fixes:"
+msgstr "Correccions d’anomalia :"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:37
+msgid "Fix quit keyboard shortcut"
+msgstr "Correccion de l’acorchis de clavièr per sortir"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:39
+msgid "Added translations:"
+msgstr "Traduccions apondudas :"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:41
+msgid "French"
+msgstr "Francés"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:43
+msgid "Updated translations:"
+msgstr "Traduccions actualizadas :"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:45
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:62
+msgid "Turkish"
+msgstr "Turc"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:51
+msgid "Window is now draggable from anywhere."
+msgstr "La fenèstra es ara desplaçabla de pertot."
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:52
+msgid ""
+"Current icon is fixed to follow Gnome HIG (the one made by Rokwallaby "
+"already did but I edited it) and a new nightly icon is made by daudix-UFO "
+"based on the original one."
+msgstr ""
+"L’icòn actual es ara corregit per sègre GNOME HIG (çò creat per "
+"Rokwallaby mas qu’editèri) e icòn novèl nuechenc creat per daudix-UFO "
+"basat sus l’original."
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:57
+msgid "Added and updated translations:"
+msgstr "Traduccions apondudas e actualizadas :"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:59
+msgid "Spanish"
+msgstr "Castelhan"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:60
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:72
+msgid "Persian"
+msgstr "Persan"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:61
+msgid "Russian"
+msgstr "Rus"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:63
+msgid "Czech"
+msgstr "Chèc"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:69
+msgid "New translations and additional information in about dialog."
+msgstr ""
+"Traduccions novèlas e informacions suplementàrias dins la fenèstra A "
+"prepaus."
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:70
+msgid "Translated to:"
+msgstr "Traduch en :"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:73
+msgid "Italian"
+msgstr "Italian"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:74
+msgid "Dutch"
+msgstr "Neerlandés"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:75
+msgid "Occitan"
+msgstr "Occitan"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:76
+msgid "Brazilian Portugese"
+msgstr "Portugués del Brasil"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:82
 msgid "First release 🥳"
 msgstr "Primièra version 🥳"
 
-#: src/wallpaper_picker.ui:14
-msgid "_Select wallpaper"
-msgstr "_Causir papièr pintrat"
-
-#: src/window.ui:40
-msgid "Wallpaper name"
-msgstr "Nom del papièr pintrat"
-
-#: src/window.ui:52
+#: src/window.ui:22
 msgid "Create"
 msgstr "Crear"
 
-#: src/window.ui:70
+#: src/window.ui:23
+msgid "Create Dynamic Wallpaper"
+msgstr "Crear un papièr pintrat dinamic"
+
+#: src/window.ui:55
+msgid "Name"
+msgstr "Nom"
+
+#: src/window.ui:74
 msgid "_Keyboard Shortcuts"
 msgstr "_Acorchis de clavièr"
 
-#: src/window.ui:74
+#: src/window.ui:78
 msgid "_About Dynamic Wallpaper"
 msgstr "_A prepaus de Papièrs Pintrats dinamics"
 
@@ -78,35 +165,39 @@ msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Quitar"
 
-#: src/wallpaper_picker.py:29
+#: src/gdwFileRow.py:26
 msgid "PNG & JPEG"
 msgstr "PNG & JPEG"
 
-#: src/wallpaper_picker.py:34
+#: src/gdwFileRow.py:31
 msgid "Select wallpaper"
 msgstr "Causir papièr pintrat"
 
-#: src/window.py:43
-msgid "Select light wallpaper"
-msgstr "Causir papièr pintrat clar"
+#: src/main.py:78
+msgid "translator-credits"
+msgstr "Quentin PAGÈS"
 
-#: src/window.py:44
-msgid "Select dark wallpaper"
-msgstr "Causir papièr pintrat escur"
+#: src/window.py:41
+msgid "Light wallpaper"
+msgstr "Papièr pintrat clar"
 
-#: src/window.py:58
+#: src/window.py:42
+msgid "Dark wallpaper"
+msgstr "Papièr pintrat escur"
+
+#: src/window.py:56
 msgid "Wallpaper name not set"
 msgstr "Nom del papièr pintrat pas definit"
 
-#: src/window.py:61
+#: src/window.py:59
 msgid "Wallpaper name cannot contain null or /"
 msgstr "Lo nom del papièr pintrat pòt pas conténer null o /"
 
-#: src/window.py:68
+#: src/window.py:66
 msgid "Wallpaper with the same name already exists"
 msgstr "Un papièr pintrat amb lo meteis nom existís ja"
 
-#: src/window.py:72
+#: src/window.py:73
 msgid "Light mode wallpaper not selected"
 msgstr "Papièr pintrat clar pas seleccionat"
 
@@ -118,6 +209,8 @@ msgstr "Papièr pintrat escur pas seleccionat"
 msgid "New dynamic wallpaper created"
 msgstr "Papièr pintrat dinamic novèl creat"
 
-#: src/window.py:126
-msgid "translator-credits"
-msgstr "Quentin PAGÈS"
+#~ msgid "_Select wallpaper"
+#~ msgstr "_Causir papièr pintrat"
+
+#~ msgid "Wallpaper name"
+#~ msgstr "Nom del papièr pintrat"
