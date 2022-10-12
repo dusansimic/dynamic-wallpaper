@@ -3,23 +3,23 @@
 # This file is distributed under the same license as the me.dusansimic.DynamicWallpaper package.
 # David Lapshin <ddaudix@gmail.com>, 2022.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: me.dusansimic.DynamicWallpaper\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-27 18:54+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Report-Msgid-Bugs-To: dusan.simic1810@gmail.com\n"
+"POT-Creation-Date: 2022-10-11 14:32+0200\n"
+"PO-Revision-Date: 2022-10-11 18:27+0300\n"
 "Last-Translator: David Lapshin <ddaudix@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language-Team: \n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.1.1\n"
 
 #: data/me.dusansimic.DynamicWallpaper.desktop.in:3
-#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:8
-#: src/window.py:123
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:8 src/window.ui:13
+#: src/main.py:68
 msgid "Dynamic Wallpaper"
 msgstr "Динамические обои"
 
@@ -41,26 +41,110 @@ msgid "Main window dark theme"
 msgstr "Темная тема для главного окна"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:35
+msgid "Bug fixes:"
+msgstr "Исправления ошибок:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:37
+msgid "Fix quit keyboard shortcut"
+msgstr "Исправлена комбинация клавиш выхода"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:39
+msgid "Added translations:"
+msgstr "Добавленные переводы:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:41
+msgid "French"
+msgstr "Французский"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:43
+msgid "Updated translations:"
+msgstr "Обновлённые переводы:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:45
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:62
+msgid "Turkish"
+msgstr "Турецкий"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:51
+msgid "Window is now draggable from anywhere."
+msgstr "Окно теперь перетаскиваемое с любого места."
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:52
+msgid ""
+"Current icon is fixed to follow Gnome HIG (the one made by Rokwallaby "
+"already did but I edited it) and a new nightly icon is made by daudix-UFO "
+"based on the original one."
+msgstr ""
+"Текущая иконка исправлена для следования Gnome HIG (ту, которая уже была "
+"сделана Rokwallaby но я её изменил) и новая nightly иконка которую сделал "
+"daudix-UFO на основе оригинальной."
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:57
+msgid "Added and updated translations:"
+msgstr "Добавленные и обновлённые переводы:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:59
+msgid "Spanish"
+msgstr "Испанский"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:60
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:72
+msgid "Persian"
+msgstr "Персидский"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:61
+msgid "Russian"
+msgstr "Русский"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:63
+msgid "Czech"
+msgstr "Чешский"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:69
+msgid "New translations and additional information in about dialog."
+msgstr "Новые переводы и дополнительная информация в диалоге О Программе."
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:70
+msgid "Translated to:"
+msgstr "Переведено на:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:73
+msgid "Italian"
+msgstr "Итальянский"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:74
+msgid "Dutch"
+msgstr "Голландский"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:75
+msgid "Occitan"
+msgstr "Оксатанский"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:76
+msgid "Brazilian Portugese"
+msgstr "Бразильский Португальский"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:82
 msgid "First release 🥳"
 msgstr "Первый выпуск 🥳"
 
-#: src/wallpaper_picker.ui:14
-msgid "_Select wallpaper"
-msgstr "_Выберите обои"
-
-#: src/window.ui:40
-msgid "Wallpaper name"
-msgstr "Название обоев"
-
-#: src/window.ui:52
+#: src/window.ui:22
 msgid "Create"
 msgstr "Создать"
 
-#: src/window.ui:70
+#: src/window.ui:23
+msgid "Create Dynamic Wallpaper"
+msgstr "Создать динамические обои"
+
+#: src/window.ui:55
+msgid "Name"
+msgstr "Имя"
+
+#: src/window.ui:74
 msgid "_Keyboard Shortcuts"
 msgstr "_Комбинации клавиш"
 
-#: src/window.ui:74
+#: src/window.ui:78
 msgid "_About Dynamic Wallpaper"
 msgstr "_О Динамические обои"
 
@@ -79,46 +163,52 @@ msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Выйти"
 
-#: src/wallpaper_picker.py:29
+#: src/gdwFileRow.py:26
 msgid "PNG & JPEG"
 msgstr "PNG и JPEG"
 
-#: src/wallpaper_picker.py:34
+#: src/gdwFileRow.py:31
 msgid "Select wallpaper"
 msgstr "Выберите обои"
 
-#: src/window.py:43
-msgid "Select light wallpaper"
-msgstr "Выберите светлые обои"
+#: src/main.py:78
+msgid "translator-credits"
+msgstr "Давид Лапшин <ddaudix@gmail.com>"
 
-#: src/window.py:44
-msgid "Select dark wallpaper"
-msgstr "Выберите темные обои"
+#: src/window.py:41
+msgid "Light wallpaper"
+msgstr "Светлые обои"
 
-#: src/window.py:58
+#: src/window.py:42
+msgid "Dark wallpaper"
+msgstr "Тёмные обои"
+
+#: src/window.py:56
 msgid "Wallpaper name not set"
-msgstr "Название обоев не установлено"
+msgstr "Имя обоев не установлено"
 
-#: src/window.py:61
+#: src/window.py:59
 msgid "Wallpaper name cannot contain null or /"
-msgstr "Название обоев не может содержать null или /"
+msgstr "Имя обоев не может содержать null или /"
 
-#: src/window.py:68
+#: src/window.py:66
 msgid "Wallpaper with the same name already exists"
-msgstr "Обои с этим названием уже существует"
+msgstr "Обои с этим именем уже существует"
 
-#: src/window.py:72
+#: src/window.py:73
 msgid "Light mode wallpaper not selected"
 msgstr "Обои для светлой темы не выбраны"
 
 #: src/window.py:76
 msgid "Dark mode wallpaper not selected"
-msgstr "Обои для темной темы не выбраны"
+msgstr "Обои для тёмной темы не выбраны"
 
 #: src/window.py:91
 msgid "New dynamic wallpaper created"
 msgstr "Новые динамические обои созданы"
 
-#: src/window.py:126
-msgid "translator-credits"
-msgstr "Давид Лапшин <ddaudix@gmail.com>"
+#~ msgid "_Select wallpaper"
+#~ msgstr "_Выберите обои"
+
+#~ msgid "Wallpaper name"
+#~ msgstr "Название обоев"
