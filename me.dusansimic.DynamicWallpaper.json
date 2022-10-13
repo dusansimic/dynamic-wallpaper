@@ -1,7 +1,7 @@
 {
     "app-id": "me.dusansimic.DynamicWallpaper",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "42",
+    "runtime-version": "43",
     "sdk": "org.gnome.Sdk",
     "command": "me.dusansimic.DynamicWallpaper",
     "finish-args": [
@@ -24,62 +24,6 @@
         "*.a"
     ],
     "modules": [
-        {
-            "name": "libadwaita",
-            "buildsystem": "meson",
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/libadwaita.git",
-                    "tag": "1.2.0",
-                    "commit": "a905117bd2150de9e85d65f8cdce8d8fb001b89e"
-                }
-            ],
-            "modules": [
-                {
-                    "name": "libsass",
-                    "cleanup": [
-                        "*"
-                    ],
-                    "sources": [
-                        {
-                            "type": "git",
-                            "url": "https://github.com/sass/libsass.git",
-                            "tag": "3.6.5",
-                            "commit": "f6afdbb9288d20d1257122e71d88e53348a53af3"
-                        },
-                        {
-                            "type": "script",
-                            "dest-filename": "autogen.sh",
-                            "commands": [
-                                "autoreconf -si"
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "name": "sassc",
-                    "cleanup": [
-                        "*"
-                    ],
-                    "sources": [
-                        {
-                            "type": "git",
-                            "url": "https://github.com/sass/sassc.git",
-                            "tag": "3.6.2",
-                            "commit": "66f0ef37e7f0ad3a65d2f481eff09d09408f42d0"
-                        },
-                        {
-                            "type": "script",
-                            "dest-filename": "autogen.sh",
-                            "commands": [
-                                "autoreconf -si"
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
         {
             "name": "dynamic-wallpaper",
             "builddir": true,

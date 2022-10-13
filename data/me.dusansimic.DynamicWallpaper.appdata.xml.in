@@ -30,6 +30,15 @@
     <control>pointing</control>
   </recommends>
   <releases>
+    <release version="0.1.0" date="2022-10-13">
+      <description>
+        <p>New stuff:</p>
+        <ul>
+          <li>New app design</li>
+        </ul>
+        <p>Updated all translations to match the new design.</p>
+      </description>
+    </release>
     <release version="0.0.4" date="2022-09-22">
       <description>
         <p>Bug fixes:</p>
