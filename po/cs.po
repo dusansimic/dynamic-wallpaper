@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-27 18:54+0200\n"
 "PO-Revision-Date: 2022-04-28 17:07+0200\n"
-"Last-Translator: vikdevelop <suoer-vik1@protonmail.com>\n"
+"Last-Translator: vikdevelop <super-vik1@protonmail.com>\n"
 "Language-Team: Czech\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,8 @@ msgstr ""
 "X-Generator: Poedit 3.0.1\n"
 
 #: data/me.dusansimic.DynamicWallpaper.desktop.in:3
-#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:8 src/window.py:123
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:8 src/window.ui:13
+#: src/main.py:68
 msgid "Dynamic Wallpaper"
 msgstr "Dynamická tapeta"
 
@@ -30,15 +31,40 @@ msgstr "Dušan Simić"
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:10
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:16
 msgid "Dynamic wallpaper creator for Gnome 42"
-msgstr "Vytváření dynamických tapet pro GNOME 42."
+msgstr "Vytváření dynamických tapet v GNOME 42"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:20
 msgid "Main window light theme"
-msgstr "Světlý motiv hlavního okna"
+msgstr "Hlavní okno světlého motivu"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:24
 msgid "Main window dark theme"
-msgstr "Tmavý motiv hlavního okna"
+msgstr "Hlavní okno tmavého motivu"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:35
+msgid "Bug fixes:"
+msgstr "Opravy chyb:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:37
+msgid "Fix quit keyboard shortcut"
+msgstr "Opravena klávesová zkratka pro ukončení aplikace"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:39
+msgid "Added translations:"
+msgstr "Přidány překlady:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:41
+msgid "French"
+msgstr "Francouzské"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:43
+msgid "Updated translations:"
+msgstr "Aktualizovány překlady:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:45
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:62
+msgid "Turkish"
+msgstr "Turecké"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:51
 msgid "Window is now draggable from anywhere."
@@ -49,8 +75,9 @@ msgid ""
 "Current icon is fixed to follow Gnome HIG (the one made by Rokwallaby "
 "already did but I edited it) and a new nightly icon is made by daudix-UFO "
 "based on the original one."
-msgstr ""Aktuální ikona je opravena tak, aby se řídila Gnome HIG (ta, kterou vytvořil Rokwallaby, "
-"již byla, ale upravil jsem ji) a nová noční ikona je vytvořena daudix-UFO ""
+msgstr ""Současná ikona je opravena tak, aby se řídila Gnome HIG (ta, kterou vytvořil Rokwallaby, "
+"již byla, ale já jsem ji upravil) a nová noční ikona je vytvořena daudix-UFO "
+"na základě té původní."
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:57
 msgid "Added and updated translations:"
@@ -58,28 +85,28 @@ msgstr "Přidány a aktualizovány překlady:"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:59
 msgid "Spanish"
-msgstr "Španělština"
+msgstr "Španělské"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:60
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:72
 msgid "Persian"
-msgstr "Perština"
+msgstr "Perské"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:61
 msgid "Russian"
-msgstr "Ruština"
+msgstr "Ruské"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:63
 msgid "Czech"
-msgstr "Čeština"
+msgstr "České"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:69
 msgid "New translations and additional information in about dialog."
-msgstr "Nové překlady a dodatečné informace v dialogu O programu."
+msgstr "Nové překlady a dodatečné informace jsou v dialogu O aplikaci."
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:70
 msgid "Translated to:"
-msgstr "Přeloženo do"
+msgstr "Přeloženo do:"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:73
 msgid "Italian"
@@ -97,29 +124,29 @@ msgstr "Okcitánštiny"
 msgid "Brazilian Portugese"
 msgstr "Brazilské portugalštiny"
 
-#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:35
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:82
 msgid "First release 🥳"
-msgstr "První vydání 🥳"
+msgstr "První vydání"
 
-#: src/wallpaper_picker.ui:14
-msgid "_Select wallpaper"
-msgstr "_Vybrat tapetu"
-
-#: src/window.ui:40
-msgid "Wallpaper name"
-msgstr "Název tapety"
-
-#: src/window.ui:52
+#: src/window.ui:22
 msgid "Create"
 msgstr "Vytvořit"
 
-#: src/window.ui:70
+#: src/window.ui:23
+msgid "Create Dynamic Wallpaper"
+msgstr "Vytvořit dynamickou tapetu"
+
+#: src/window.ui:55
+msgid "Name"
+msgstr "Název"
+
+#: src/window.ui:74
 msgid "_Keyboard Shortcuts"
 msgstr "_Klávesové zkratky"
 
-#: src/window.ui:74
+#: src/window.ui:78
 msgid "_About Dynamic Wallpaper"
-msgstr "O aplikaci Dynamická tapeta"
+msgstr "_O aplikaci"
 
 #: src/gtk/help-overlay.ui:11
 msgctxt "shortcut window"
@@ -134,51 +161,19 @@ msgstr "Zobrazit zkratky"
 #: src/gtk/help-overlay.ui:20
 msgctxt "shortcut window"
 msgid "Quit"
-msgstr "Odejít"
+msgstr "Ukončit"
 
-#: src/wallpaper_picker.py:29
+#: src/gdwFileRow.py:26
 msgid "PNG & JPEG"
 msgstr "PNG a JPEG"
 
-#: src/wallpaper_picker.py:34
+#: src/gdwFileRow.py:31
 msgid "Select wallpaper"
 msgstr "Vybrat tapetu"
 
-#: src/window.py:43
-msgid "Select light wallpaper"
-msgstr "Vybrat světlou tapetu"
-
-#: src/window.py:44
-msgid "Select dark wallpaper"
-msgstr "Vybrat tmavou tapetu"
-
-#: src/window.py:58
-msgid "Wallpaper name not set"
-msgstr "Jméno tapety není nastaveno"
-
-#: src/window.py:61
-msgid "Wallpaper name cannot contain null or /"
-msgstr "Jméno tapety nesmí obsahovat 'null' nebo /"
-
-#: src/window.py:68
-msgid "Wallpaper with the same name already exists"
-msgstr "Tapeta se stejným jménem již existuje"
-
-#: src/window.py:72
-msgid "Light mode wallpaper not selected"
-msgstr "Světlý režim tapety není vybrán"
-
-#: src/window.py:76
-msgid "Dark mode wallpaper not selected"
-msgstr "Tmavý režim tapety není vybrán"
-
-#: src/window.py:91
-msgid "New dynamic wallpaper created"
-msgstr "Nová dynamická tapeta byla vytvořena"
-
-#: src/window.py:126
+#: src/main.py:78
 msgid "translator-credits"
-msgstr "vikdevelop <super-vik1@protonmail.com>"
+msgstr "vikdevelop https://github.com/vikdevelop"
 
 #: src/window.py:41
 msgid "Light wallpaper"
@@ -190,7 +185,7 @@ msgstr "Tmavá tapeta"
 
 #: src/window.py:56
 msgid "Wallpaper name not set"
-msgstr "Název tapety není nastaveno"
+msgstr "Název tapety není nastaven"
 
 #: src/window.py:59
 msgid "Wallpaper name cannot contain null or /"
@@ -198,7 +193,7 @@ msgstr "Název tapety nesmí obsahovat nulu nebo /"
 
 #: src/window.py:66
 msgid "Wallpaper with the same name already exists"
-msgstr "Tapeta se stejným názvem již exituje"
+msgstr "Tapeta se stejným názvem již existuje"
 
 #: src/window.py:73
 msgid "Light mode wallpaper not selected"
