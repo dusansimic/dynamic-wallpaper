@@ -22,7 +22,7 @@ Please make sure you have these dependencies first before building.
 
 ```
 gtk4
-libadwaita-1
+libadwaita-1-0
 meson
 python3
 ```
