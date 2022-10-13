@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR Dušan Simić <dusan.simic1810@gmail.com>
-# This file is distributed under the same license as the Dynamic Wallpaper package.
+# This file is distributed under the same license as the me.dusansimic.DynamicWallpaper package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Dynamic Wallpaper 0.4.0\n"
+"Project-Id-Version: me.dusansimic.DynamicWallpaper 0.0.4\n"
 "Report-Msgid-Bugs-To: dusan.simic1810@gmail.com\n"
-"POT-Creation-Date: 2022-10-11 14:32+0200\n"
+"POT-Creation-Date: 2022-10-12 08:24+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
