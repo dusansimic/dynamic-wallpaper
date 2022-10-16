@@ -1,27 +1,27 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Spanish translation for me.dusansimic.DynamicWallpaper.
+# Copyright (C) 2022 Dušan Simić <dusan.simic1810@gmail.com>
 # This file is distributed under the same license as the me.dusansimic.DynamicWallpaper package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # Brandon Sánchez <spbrandonsteve@tutanota.com>, 2022.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: me.dusansimic.DynamicWallpaper\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-27 18:54+0200\n"
-"PO-Revision-Date: 2022-06-07 19:34-0600\n"
-"Last-Translator: Brandon Sánchez <spbrandonsteve@tutanota.com>\n"
+"Project-Id-Version: me.dusansimic.DynamicWallpaper 0.0.4\n"
+"Report-Msgid-Bugs-To: dusan.simic1810@gmail.com\n"
+"POT-Creation-Date: 2022-10-12 08:24+0200\n"
+"PO-Revision-Date: 2022-10-15 20:36-0500\n"
+"Last-Translator: servindc <servindc@cimat.mx>\n"
 "Language-Team: Spanish <spbrandonsteve@tutanota.com>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Gtranslator 40.0\n"
 
 #: data/me.dusansimic.DynamicWallpaper.desktop.in:3
-#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:8 src/window.py:123
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:8 src/window.ui:13
+#: src/main.py:68
 msgid "Dynamic Wallpaper"
-msgstr "Dynamic Wallpaper"
+msgstr "Fondos de Pantalla Dinámicos"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:9
 msgid "Dušan Simić"
@@ -30,37 +30,123 @@ msgstr "Dušan Simić"
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:10
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:16
 msgid "Dynamic wallpaper creator for Gnome 42"
-msgstr "Herramienta de creación de fondos de pantalla dinámicos para GNOME 42"
+msgstr "Herramienta para crear fondos de pantalla dinámicos para GNOME 42"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:20
 msgid "Main window light theme"
-msgstr "Tema claro de la ventana principal"
+msgstr "Tema claro para la ventana principal"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:24
 msgid "Main window dark theme"
-msgstr "Tema oscuro de la ventana principal"
+msgstr "Tema oscuro para la ventana principal"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:35
+msgid "Bug fixes:"
+msgstr "Correcciones de errores:"
+
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:37
+msgid "Fix quit keyboard shortcut"
+msgstr "Corrección para el acceso directo del teclado para salir"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:39
+msgid "Added translations:"
+msgstr "Traducciones añadidas:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:41
+msgid "French"
+msgstr "Francés"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:43
+msgid "Updated translations:"
+msgstr "Traducciones actualizadas:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:45
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:62
+msgid "Turkish"
+msgstr "Turco"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:51
+msgid "Window is now draggable from anywhere."
+msgstr "Ahora la ventana puede arrastrarse desde cualquier parte."
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:52
+msgid ""
+"Current icon is fixed to follow Gnome HIG (the one made by Rokwallaby "
+"already did but I edited it) and a new nightly icon is made by daudix-UFO "
+"based on the original one."
+msgstr ""
+"El icono actual está corregido para seguir las guías para interfaces de "
+"usuario de Gnome (ya elaborado por Rokwallaby, pero lo edité) y se incluye "
+"un nuevo icono nocturno hecho por daudix-UFO basado en el original".
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:57
+msgid "Added and updated translations:"
+msgstr "Trducciones añadidas y actualizadas:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:59
+msgid "Spanish"
+msgstr "Español"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:60
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:72
+msgid "Persian"
+msgstr "Persa"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:61
+msgid "Russian"
+msgstr "Ruso"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:63
+msgid "Czech"
+msgstr "Checo"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:69
+msgid "New translations and additional information in about dialog."
+msgstr "Nuevas traducciones e información adicional acerca del diálogo."
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:70
+msgid "Translated to:"
+msgstr "Traducido a:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:73
+msgid "Italian"
+msgstr "Italiano"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:74
+msgid "Dutch"
+msgstr "Holandés"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:75
+msgid "Occitan"
+msgstr "Occitano"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:76
+msgid "Brazilian Portugese"
+msgstr "Portugués (Brasil)"
+
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:82
 msgid "First release 🥳"
 msgstr "Primer lanzamiento 🥳"
 
-#: src/wallpaper_picker.ui:14
-msgid "_Select wallpaper"
-msgstr "_Seleccionar fondo de pantalla"
-
-#: src/window.ui:40
-msgid "Wallpaper name"
-msgstr "Nombre de fondo de pantalla"
-
-#: src/window.ui:52
+#: src/window.ui:22
 msgid "Create"
 msgstr "Crear"
 
-#: src/window.ui:70
+#: src/window.ui:23
+msgid "Create Dynamic Wallpaper"
+msgstr "Crear Fondo de Pantalla Dinámico"
+
+#: src/window.ui:55
+msgid "Name"
+msgstr "Nombre"
+
+#: src/window.ui:74
 msgid "_Keyboard Shortcuts"
 msgstr "_Atajos de Teclado"
 
-#: src/window.ui:74
+#: src/window.ui:78
 msgid "_About Dynamic Wallpaper"
 msgstr "_Acerca de Dynamic Wallpaper"
 
@@ -72,53 +158,53 @@ msgstr "General"
 #: src/gtk/help-overlay.ui:14
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr "Mostrar Atajos"
+msgstr "Mostrar Atajos de Teclado"
 
 #: src/gtk/help-overlay.ui:20
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Salir"
 
-#: src/wallpaper_picker.py:29
+#: src/gdwFileRow.py:26
 msgid "PNG & JPEG"
 msgstr "PNG y JPEG"
 
-#: src/wallpaper_picker.py:34
+#: src/gdwFileRow.py:31
 msgid "Select wallpaper"
 msgstr "Seleccionar fondo de pantalla"
 
-#: src/window.py:43
-msgid "Select light wallpaper"
-msgstr "Seleccionar fondo de pantalla claro"
+#: src/main.py:78
+msgid "translator-credits"
+msgstr "servindc <servindc@cimat.mx>"
 
-#: src/window.py:44
-msgid "Select dark wallpaper"
-msgstr "Seleccionar fondo de pantalla oscuro"
+#: src/window.py:41
+msgid "Light wallpaper"
+msgstr "Fondo de pantalla claro"
 
-#: src/window.py:58
+#: src/window.py:42
+msgid "Dark wallpaper"
+msgstr "Fondo de pantalla claro"
+
+#: src/window.py:56
 msgid "Wallpaper name not set"
-msgstr "El Nombre del fondo de pantalla no ha sido establecido"
+msgstr "Nombre del fondo de pantalla no establecido"
 
-#: src/window.py:61
+#: src/window.py:59
 msgid "Wallpaper name cannot contain null or /"
-msgstr "El nombre del fondo de pantalla no puede incluir null o /"
+msgstr "El nombre del fondo de pantalla no debe contener null o /"
 
-#: src/window.py:68
+#: src/window.py:66
 msgid "Wallpaper with the same name already exists"
 msgstr "Ya existe un fondo de pantalla con el mismo nombre"
 
-#: src/window.py:72
+#: src/window.py:73
 msgid "Light mode wallpaper not selected"
-msgstr "El fondo de pantalla para el tema claro no ha sido seleccionado"
+msgstr "Modo claro para el fondo de pantalla no seleccionado"
 
 #: src/window.py:76
 msgid "Dark mode wallpaper not selected"
-msgstr "El fondo de pantalla para el tema oscuro no ha sido seleccionado"
+msgstr "Modo oscuro para el fondo de pantalla no seleccionado"
 
 #: src/window.py:91
 msgid "New dynamic wallpaper created"
-msgstr "Un nuevo fondo de pantalla dinámico ha sido creado"
-
-#: src/window.py:126
-msgid "translator-credits"
-msgstr "Brandon Sánchez <spbrandonsteve@tutanota.com>"
+msgstr "Nuevo fondo de pantalla dinámico creado"
