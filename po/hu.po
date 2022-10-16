@@ -1,0 +1,214 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the me.dusansimic.DynamicWallpaper package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: me.dusansimic.DynamicWallpaper\n"
+"Report-Msgid-Bugs-To: dusan.simic1810@gmail.com\n"
+"POT-Creation-Date: 2022-10-15 17:23+0200\n"
+"PO-Revision-Date: 2022-10-15 17:23+0200\n"
+"Last-Translator: Kokan <kokaipeter@gmail.com>\n"
+"Language-Team: \n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: data/me.dusansimic.DynamicWallpaper.desktop.in:3
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:8 src/window.ui:13
+#: src/main.py:68
+msgid "Dynamic Wallpaper"
+msgstr "Dinamikus háttérkép"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:9
+msgid "Dušan Simić"
+msgstr "Dušan Simić"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:10
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:16
+msgid "Dynamic wallpaper creator for Gnome 42"
+msgstr "Dinamikus háttérkép készítő Gnome 42-höz"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:20
+msgid "Main window light theme"
+msgstr "Fő ablak világos téme"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:24
+msgid "Main window dark theme"
+msgstr "Fő ablak sötét téma"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:35
+msgid "Bug fixes:"
+msgstr "Hibajavítások:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:37
+msgid "Fix quit keyboard shortcut"
+msgstr "Kilépés gyorsbillentyűzet javítás"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:39
+msgid "Added translations:"
+msgstr "Új fordítások:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:41
+msgid "French"
+msgstr "Francia"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:43
+msgid "Updated translations:"
+msgstr "Frissitett fordítások:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:45
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:62
+msgid "Turkish"
+msgstr "Török"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:51
+msgid "Window is now draggable from anywhere."
+msgstr "Az ablak most már mozgatható"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:52
+msgid ""
+"Current icon is fixed to follow Gnome HIG (the one made by Rokwallaby "
+"already did but I edited it) and a new nightly icon is made by daudix-UFO "
+"based on the original one."
+msgstr ""
+"Aktuális ikon követni fogja a Gnome HIG-et (Rokwallaby által készített "
+"már müködött, de megváltoztattam) és az éjszakai ikont daudix-UFO készítette"
+"az eredeti alapján."
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:57
+msgid "Added and updated translations:"
+msgstr "Új és frissitett fordítások:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:59
+msgid "Spanish"
+msgstr "Spanyol"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:60
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:72
+msgid "Persian"
+msgstr "Perzsa"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:61
+msgid "Russian"
+msgstr "Orosz"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:63
+msgid "Czech"
+msgstr "Cseh"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:69
+msgid "New translations and additional information in about dialog."
+msgstr "Új fordítások és hozzáadott információk az about dialog."
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:70
+msgid "Translated to:"
+msgstr "Lefordítva:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:73
+msgid "Italian"
+msgstr "Olasz"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:74
+msgid "Dutch"
+msgstr "Nederlands"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:75
+msgid "Occitan"
+msgstr "Occitaans"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:76
+msgid "Brazilian Portugese"
+msgstr "Brazil Protugál"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:82
+msgid "First release 🥳"
+msgstr "Első kiadás 🥳"
+
+#: src/window.ui:22
+msgid "Create"
+msgstr "Létrehoz"
+
+#: src/window.ui:23
+msgid "Create Dynamic Wallpaper"
+msgstr "Dinamikus háttér létrehozása"
+
+#: src/window.ui:55
+msgid "Name"
+msgstr "Név"
+
+#: src/window.ui:74
+msgid "_Keyboard Shortcuts"
+msgstr "_Gyorsbillentyűk"
+
+#: src/window.ui:78
+msgid "_About Dynamic Wallpaper"
+msgstr "Dinamikus hátterek _informácio"
+
+#: src/gtk/help-overlay.ui:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Általános"
+
+#: src/gtk/help-overlay.ui:14
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Mutasd a gyorsbillentyűket"
+
+#: src/gtk/help-overlay.ui:20
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Kilépés"
+
+#: src/gdwFileRow.py:26
+msgid "PNG & JPEG"
+msgstr "PNG és JPEG"
+
+#: src/gdwFileRow.py:31
+msgid "Select wallpaper"
+msgstr "Válasz háttérképet"
+
+#: src/main.py:78
+msgid "translator-credits"
+msgstr "Kokan <kokaipeter@gmail.com>"
+
+#: src/window.py:41
+msgid "Light wallpaper"
+msgstr "Világos háttérkép"
+
+#: src/window.py:42
+msgid "Dark wallpaper"
+msgstr "Sötét háttérkép"
+
+#: src/window.py:56
+msgid "Wallpaper name not set"
+msgstr "Háttérkép neve nem lett kitöltve"
+
+#: src/window.py:59
+msgid "Wallpaper name cannot contain null or /"
+msgstr "A háttérkép neve nem tartalmazhat null-t vagy /"
+
+#: src/window.py:66
+msgid "Wallpaper with the same name already exists"
+msgstr "Azonos nevü háttérkép már létezik"
+
+#: src/window.py:73
+msgid "Light mode wallpaper not selected"
+msgstr "Világos háttérkép nem lett kiválasztva"
+
+#: src/window.py:76
+msgid "Dark mode wallpaper not selected"
+msgstr "Sötét háttérkép nem lett kiválasztva"
+
+#: src/window.py:91
+msgid "New dynamic wallpaper created"
+msgstr "Új dinamikus háttérkép elkészült"
+
+#~ msgid "_Select wallpaper"
+#~ msgstr "Háttérkép _választás"
+
+#~ msgid "Wallpaper name"
+#~ msgstr "Háttérkép neve"
