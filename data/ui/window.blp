@@ -1,9 +1,6 @@
 using Gtk 4.0;
 using Adw 1;
 
-using Gtk 4.0;
-using Adw 1;
-
 template DynamicWallpaperWindow : Adw.ApplicationWindow {
   title: _("Dynamic Wallpaper");
   default-width: 500;
@@ -62,7 +59,7 @@ template DynamicWallpaperWindow : Adw.ApplicationWindow {
               child: Adw.PreferencesPage content { 
                 Adw.PreferencesGroup input_rows {
                   styles ["boxed-list"]
-                  
+
                   Adw.EntryRow entry_name {
                     title: _("Name");
                     hexpand: true;
