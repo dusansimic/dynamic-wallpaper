@@ -1,0 +1,97 @@
+using Gtk 4.0;
+using Adw 1;
+
+using Gtk 4.0;
+using Adw 1;
+
+template DynamicWallpaperWindow : Adw.ApplicationWindow {
+  title: _("Dynamic Wallpaper");
+  default-width: 500;
+  default-height: 450;
+
+  Adw.ToastOverlay toast_overlay {
+    Adw.Leaflet leaflet {
+      can-navigate-back: true;
+      can-unfold: false;
+
+      Gtk.Box main_view {
+        orientation: vertical;
+
+        Adw.HeaderBar titlebar {
+          centering-policy: strict;
+
+          [start]
+          Button {
+            Adw.ButtonContent {
+              icon-name: "document-new-symbolic";
+              label: _("Create");
+              tooltip-text: _("Create a new dynamic wallpaper");
+              
+            }
+
+            action-name: "win.create";
+            styles ["suggested-action"]
+          }
+          
+          [title]
+          Label title {
+            label: _("Dynamic Wallpaper");
+          }
+
+          [end]
+          Gtk.MenuButton {
+            tooltip-text: _("Main Menu");
+            icon-name: "open-menu-symbolic";
+            menu-model: main-menu;
+          }
+
+          
+        }
+
+        Gtk.Box {
+          orientation: vertical;
+
+          Adw.ViewStack view_stack {
+            vexpand: true;
+            hexpand: true;
+
+            Adw.ViewStackPage {
+              name: "main";
+              title: _("Dynamic Wallpaper");
+
+              child: Adw.PreferencesPage content { 
+                Adw.PreferencesGroup input_rows {
+                  styles ["boxed-list"]
+                  
+                  Adw.EntryRow entry_name {
+                    title: _("Name");
+                    hexpand: true;
+                  }
+                }
+              };
+            }
+
+          }
+
+          
+        }
+      }
+    }
+  }
+}
+
+
+menu main-menu {
+  section {
+    item {
+      label: _("Keyboard Shortcuts");
+      action: "win.show-help-overlay";
+    }
+
+    item {
+      label: _("About Dynamic Wallpaper");
+      action: "app.about";
+    }
+  }
+}
+
