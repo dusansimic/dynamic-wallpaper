@@ -3,14 +3,16 @@
 # This file is distributed under the same license as the me.dusansimic.DynamicWallpaper package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # Pedro Sader Azevedo <pedro.saderazevedo@protonmail.com>, 2022.
+# Leonardo César Bottaro <contact@leobottaro.com>, 2022.
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: me.dusansimic.DynamicWallpaper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-27 18:54+0200\n"
-"PO-Revision-Date: 2022-04-29 00:44-0300\n"
-"Last-Translator: Pedro Sader Azevedo <pedro.saderazevedo@protonmail.com>\n"
+"PO-Revision-Date: 2022-10-19 15:45-0300\n"
+"Last-Translator: Leonardo César Bottaro <contact@leobottaro.com>\n"
 "Language-Team: Brazilian Portuguese <pedro.saderazevedo@protonmail.com>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +22,8 @@ msgstr ""
 "X-Generator: Gtranslator 42.0\n"
 
 #: data/me.dusansimic.DynamicWallpaper.desktop.in:3
-#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:8 src/window.py:123
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:8 src/window.ui:13
+#: src/main.py:68
 msgid "Dynamic Wallpaper"
 msgstr "Plano de Fundo Dinâmico"
 
@@ -42,26 +45,110 @@ msgid "Main window dark theme"
 msgstr "Tema escuro da janela principal"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:35
+msgid "Bug fixes:"
+msgstr "Erros corrigidos:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:37
+msgid "Fix quit keyboard shortcut"
+msgstr "Corrigido atalho do teclado para sair"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:39
+msgid "Added translations:"
+msgstr "Adicionado as traduções:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:41
+msgid "French"
+msgstr "Francês"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:43
+msgid "Updated translations:"
+msgstr "Atualizada as traduções:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:45
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:62
+msgid "Turkish"
+msgstr "Turquês"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:51
+msgid "Window is now draggable from anywhere."
+msgstr "A Janela agora pode ser arrastada de qualquer lugar"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:52
+msgid ""
+"Current icon is fixed to follow Gnome HIG (the one made by Rokwallaby "
+"already did but I edited it) and a new nightly icon is made by daudix-UFO "
+"based on the original one."
+msgstr ""
+"O icone atual foi corrigido para seguir o Gnome HIG (O icone foi feito por Rokwallaby, "
+"mas eu modifiquei) e um novo icone para nightly foi feito por daudix-UFO "
+"baseado no icone original"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:57
+msgid "Added and updated translations:"
+msgstr "Adicionado e atualizado as traduções:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:59
+msgid "Spanish"
+msgstr "Espanhol"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:60
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:72
+msgid "Persian"
+msgstr "Persa"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:61
+msgid "Russian"
+msgstr "Russo"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:63
+msgid "Czech"
+msgstr "Tcheco"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:69
+msgid "New translations and additional information in about dialog."
+msgstr "Novas traduções e informações adicionais na janela Sobre"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:70
+msgid "Translated to:"
+msgstr "Traduzido para:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:73
+msgid "Italian"
+msgstr "Italiano"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:74
+msgid "Dutch"
+msgstr "Holandês"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:75
+msgid "Occitan"
+msgstr "Occitano"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:76
+msgid "Brazilian Portugese"
+msgstr "Português Brasileiro"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:82
 msgid "First release 🥳"
-msgstr "Primeiro lançamento 🥳"
+msgstr "Primeira versão 🥳"
 
-#: src/wallpaper_picker.ui:14
-msgid "_Select wallpaper"
-msgstr "_Selecione um plano de fundo"
-
-#: src/window.ui:40
-msgid "Wallpaper name"
-msgstr "Nome do plano de fundo"
-
-#: src/window.ui:52
+#: src/window.ui:22
 msgid "Create"
 msgstr "Criar"
 
-#: src/window.ui:70
+#: src/window.ui:23
+msgid "Create Dynamic Wallpaper"
+msgstr "Criar Plano de Fundo Dinâmico"
+
+#: src/window.ui:55
+msgid "Name"
+msgstr "Nome"
+
+#: src/window.ui:74
 msgid "_Keyboard Shortcuts"
 msgstr "_Atalhos de teclado"
 
-#: src/window.ui:74
+#: src/window.ui:78
 msgid "_About Dynamic Wallpaper"
 msgstr "_Sobre o Plano de Fundo Dinâmico"
 
@@ -80,35 +167,39 @@ msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Sair"
 
-#: src/wallpaper_picker.py:29
+#: src/gdwFileRow.py:26
 msgid "PNG & JPEG"
 msgstr "PNG e JPEG"
 
-#: src/wallpaper_picker.py:34
+#: src/gdwFileRow.py:31
 msgid "Select wallpaper"
 msgstr "Selecionar plano de fundo"
 
-#: src/window.py:43
-msgid "Select light wallpaper"
-msgstr "Selecionar plano de fundo claro"
+#: src/main.py:78
+msgid "translator-credits"
+msgstr "Pedro Sader Azevedo, Leonardo César Bottaro"
 
-#: src/window.py:44
-msgid "Select dark wallpaper"
-msgstr "Selecionar plano de fundo escuro"
+#: src/window.py:41
+msgid "Light wallpaper"
+msgstr "Plano de fundo claro"
 
-#: src/window.py:58
+#: src/window.py:42
+msgid "Dark wallpaper"
+msgstr "Plano de fundo escuro"
+
+#: src/window.py:56
 msgid "Wallpaper name not set"
 msgstr "Nome do plano de fundo não escrito"
 
-#: src/window.py:61
+#: src/window.py:59
 msgid "Wallpaper name cannot contain null or /"
 msgstr "O nome do plano de fundo não pode conter null ou /"
 
-#: src/window.py:68
+#: src/window.py:66
 msgid "Wallpaper with the same name already exists"
 msgstr "Um plano de fundo com o mesmo nome já existe"
 
-#: src/window.py:72
+#: src/window.py:73
 msgid "Light mode wallpaper not selected"
 msgstr "Plano de fundo claro não selecionado"
 
@@ -119,7 +210,3 @@ msgstr "Plano de fundo escuro não selecionado"
 #: src/window.py:91
 msgid "New dynamic wallpaper created"
 msgstr "Novo plano de fundo dinâmico criado"
-
-#: src/window.py:126
-msgid "translator-credits"
-msgstr "Pedro Sader Azevedo"
