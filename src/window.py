@@ -35,7 +35,6 @@ class DynamicWallpaperWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
 
         self._setup_actions()
-        
         self.entry_name.grab_focus()
 
         self.file_light = FileRow(self, _('Light wallpaper'))
