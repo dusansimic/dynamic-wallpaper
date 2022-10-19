@@ -24,7 +24,7 @@ import xml.etree.cElementTree as ET
 
 
 @Gtk.Template(resource_path='/me/dusansimic/DynamicWallpaper/window.ui')
-class DynamicWallpaperWindow(Gtk.ApplicationWindow):
+class DynamicWallpaperWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'DynamicWallpaperWindow'
 
     toast_overlay = Gtk.Template.Child()
@@ -35,7 +35,6 @@ class DynamicWallpaperWindow(Gtk.ApplicationWindow):
         super().__init__(**kwargs)
 
         self._setup_actions()
-
         self.entry_name.grab_focus()
 
         self.file_light = FileRow(self, _('Light wallpaper'))
@@ -66,8 +65,11 @@ class DynamicWallpaperWindow(Gtk.ApplicationWindow):
             self.toast_overlay.add_toast(Adw.Toast.new(_('Wallpaper with the same name already exists')))
             return
 
-        light_path = self.file_light.wp_file.path
-        dark_path = self.file_dark.wp_file.path
+        try:
+            light_path = self.file_light.wp_file.path
+            dark_path = self.file_dark.wp_file.path
+        except AttributeError:
+            self.toast_overlay.add_toast(Adw.Toast.new(_('No wallpapers selected')))
 
         if (light_path == "" or not os.path.exists(light_path)):
             self.toast_overlay.add_toast(Adw.Toast.new(_('Light mode wallpaper not selected')))

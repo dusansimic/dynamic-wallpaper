@@ -1,6 +1,16 @@
 config = configuration_data()
 config.set('app_id', app_id)
 
+subdir('ui')
+
+gnome.compile_resources(app_id,
+  'me.dusansimic.DynamicWallpaper.gresource.xml',
+  gresource_bundle: true,
+  install: true,
+  install_dir: join_paths(get_option('prefix'), get_option('datadir'), meson.project_name()),
+  dependencies: blueprints
+)
+
 desktop_conf = configure_file(
   input: '@0@.desktop.in'.format(meson.project_name()),
   output: '@0@.desktop.in'.format(app_id),

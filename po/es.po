@@ -78,7 +78,7 @@ msgid ""
 msgstr ""
 "El icono actual está corregido para seguir las guías para interfaces de "
 "usuario de Gnome (ya elaborado por Rokwallaby, pero lo edité) y se incluye "
-"un nuevo icono nocturno hecho por daudix-UFO basado en el original".
+"un nuevo icono nocturno hecho por daudix-UFO basado en el original"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:57
 msgid "Added and updated translations:"

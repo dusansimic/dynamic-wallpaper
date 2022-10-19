@@ -2,13 +2,6 @@ pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), meson.proje
 moduledir = join_paths(pkgdatadir, 'dynamic_wallpaper')
 gnome = import('gnome')
 
-gnome.compile_resources(app_id,
-  'dynamic_wallpaper.gresource.xml',
-  gresource_bundle: true,
-  install: true,
-  install_dir: pkgdatadir,
-)
-
 python = import('python')
 
 conf = configuration_data()

@@ -61,7 +61,8 @@ class DynamicWallpaperApplication(Adw.Application):
 
         developers = [
           'Dušan Simić <dusan.simic1810@gmail.com>',
-          'Mattia B'
+          'Mattia B',
+          '0xMRTT https://github.com/0xMRTT'
         ]
 
         about = Adw.AboutWindow(

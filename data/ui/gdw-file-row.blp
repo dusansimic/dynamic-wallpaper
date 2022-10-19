@@ -1,0 +1,18 @@
+using Gtk 4.0;
+using Adw 1;
+
+template GdwFileRow : Adw.ActionRow {
+  Gtk.Button button_open {
+    icon-name: "document-open-symbolic";
+    valign: center;
+    styles ["circular"]
+  }
+
+  Gtk.Button button_delete {
+    visible: false;
+    icon-name: "user-trash-symbolic";
+    valign: center;
+    styles ["circular", "destructive-action"]
+  }
+
+}
