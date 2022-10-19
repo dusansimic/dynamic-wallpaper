@@ -4,7 +4,7 @@ config.set('app_id', app_id)
 subdir('ui')
 
 gnome.compile_resources(app_id,
-  'dynamic_wallpaper.gresource.xml',
+  'me.dusansimic.DynamicWallpaper.gresource.xml',
   gresource_bundle: true,
   install: true,
   install_dir: join_paths(get_option('prefix'), get_option('datadir'), meson.project_name()),
