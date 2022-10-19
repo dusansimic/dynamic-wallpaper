@@ -19,13 +19,13 @@ template DynamicWallpaperWindow : Adw.ApplicationWindow {
 
           [start]
           Button {
+            action-name: "win.create";
+            
             Adw.ButtonContent {
               icon-name: "document-new-symbolic";
               label: _("Create");
               tooltip-text: _("Create a new dynamic wallpaper");
-            }
-
-            action-name: "win.create";
+            } 
             styles ["suggested-action"]
           }
           
@@ -54,12 +54,11 @@ template DynamicWallpaperWindow : Adw.ApplicationWindow {
               title: _("Dynamic Wallpaper");
               child: Adw.PreferencesPage content { 
                 Adw.PreferencesGroup input_rows {
-                  styles ["boxed-list"]
-
                   Adw.EntryRow entry_name {
                     title: _("Name");
                     hexpand: true;
                   }
+                  styles ["boxed-list"]
                 }
               };
             }
