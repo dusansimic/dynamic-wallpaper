@@ -6,73 +6,56 @@ template DynamicWallpaperWindow : Adw.ApplicationWindow {
   default-width: 500;
   default-height: 450;
 
-  Adw.ToastOverlay toast_overlay {
-    Adw.Leaflet leaflet {
-      can-navigate-back: true;
-      can-unfold: false;
+  Gtk.Box {
+    orientation: vertical;
+    Adw.HeaderBar titlebar {
+      centering-policy: strict;
+      title-widget: Adw.WindowTitle {
+        title: _("Dynamic Wallpaper");
+      };
 
-      Gtk.Box main_view {
-        orientation: vertical;
+      [start]
+      Gtk.Button {
+        action-name: "win.create";
 
-        Adw.HeaderBar titlebar {
-          centering-policy: strict;
-
-          [start]
-          Button {
-            action-name: "win.create";
-            
-            Adw.ButtonContent {
-              icon-name: "document-new-symbolic";
-              label: _("Create");
-              tooltip-text: _("Create a new dynamic wallpaper");
-            }
-
-            styles ["suggested-action"]
-          }
-          
-          [title]
-          Label title {
-            label: _("Dynamic Wallpaper");
-          }
-
-          [end]
-          Gtk.MenuButton {
-            tooltip-text: _("Main Menu");
-            icon-name: "open-menu-symbolic";
-            menu-model: main-menu;
-          }
+        Adw.ButtonContent {
+          icon-name: "document-new-symbolic";
+          label: _("Create");
+          tooltip-text: _("Create a new dynamic wallpaper");
         }
 
-        Gtk.Box {
-          orientation: vertical;
+        styles ["suggested-action"]
+      }
 
-          Adw.ViewStack view_stack {
-            vexpand: true;
-            hexpand: true;
+      [end]
+      Gtk.MenuButton {
+        icon-name: "open-menu-symbolic";
+        menu-model: primary_menu;
+      }
+    }
 
-            Adw.ViewStackPage {
-              name: "main";
-              title: _("Dynamic Wallpaper");
-              child: Adw.PreferencesPage content { 
-                Adw.PreferencesGroup input_rows {
-                  Adw.EntryRow entry_name {
-                    title: _("Name");
-                    hexpand: true;
-                  }
+    Adw.ToastOverlay toast_overlay {
+      vexpand: true;
 
-                  styles ["boxed-list"]
-                }
-              };
-            }
+      Adw.Clamp {
+        tightening-threshold: 100;
+        valign: center;
+        margin-top: 36;
+        margin-bottom: 36;
+
+        Adw.PreferencesGroup input_rows {
+          Adw.EntryRow entry_name {
+            title: _("Name");
           }
+
+          styles ["boxed-list"]
         }
       }
     }
   }
 }
 
-
-menu main-menu {
+menu primary_menu {
   section {
     item {
       label: _("Keyboard Shortcuts");
@@ -85,4 +68,3 @@ menu main-menu {
     }
   }
 }
-
