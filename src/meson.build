@@ -1,5 +1,5 @@
 pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), meson.project_name())
-moduledir = join_paths(pkgdatadir, 'me.dusansimic.DynamicWallpaper')
+moduledir = join_paths(pkgdatadir, 'dynamic_wallpaper')
 gnome = import('gnome')
 
 python = import('python')
