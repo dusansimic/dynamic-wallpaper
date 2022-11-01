@@ -35,11 +35,11 @@ msgstr "Trình tạo hình nền động cho GNOME 42"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:20
 msgid "Main window light theme"
-msgstr "Chủ đề sáng cửa sổ  chính"
+msgstr "Chủ đề sáng cửa sổ chính"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:24
 msgid "Main window dark theme"
-msgstr "Chủ đề  tối cửa sổ  chính"
+msgstr "Chủ đề  tối cửa sổ chính"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:35
 msgid "Bug fixes:"
@@ -68,7 +68,7 @@ msgstr "Tiếng Thổ Nhĩ Kỳ"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:51
 msgid "Window is now draggable from anywhere."
-msgstr "Cửa sổ  nay đã có thể  kéo thả từ mọi nơi."
+msgstr "Cửa sổ nay đã có thể kéo thả từ mọi nơi."
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:52
 msgid ""
@@ -112,7 +112,7 @@ msgstr "Tiếng Italy"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:74
 msgid "Dutch"
-msgstr ""
+msgstr "Tiếng Hà Lan"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:75
 msgid "Occitan"
