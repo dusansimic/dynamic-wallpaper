@@ -175,11 +175,11 @@ msgstr "yukidream"
 
 #: src/window.py:41
 msgid "Light wallpaper"
-msgstr "Latar belakang terang"
+msgstr "Latar belakang Terang"
 
 #: src/window.py:42
 msgid "Dark wallpaper"
-msgstr "Latar belakang gelap"
+msgstr "Latar belakang Gelap"
 
 #: src/window.py:56
 msgid "Wallpaper name not set"
@@ -203,4 +203,4 @@ msgstr "Latar belakang gelap tidak dipilih"
 
 #: src/window.py:91
 msgid "New dynamic wallpaper created"
-msgstr "Latar belakang dinamis  dibuat"
+msgstr "Latar belakang dinamis baru dibuat"
