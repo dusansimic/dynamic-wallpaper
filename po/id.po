@@ -35,11 +35,11 @@ msgstr "Pembuat latar belakang dinamis untuk Gnome 42"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:20
 msgid "Main window light theme"
-msgstr "Main windows light theme"
+msgstr "Jendela utama tema terang"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:24
 msgid "Main window dark theme"
-msgstr "Main windows dark theme"
+msgstr "Jendela utama tema gelap"
 
 #: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:35
 msgid "Bug fixes:"
