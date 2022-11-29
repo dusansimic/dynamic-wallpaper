@@ -37,8 +37,10 @@ class DynamicWallpaperWindow(Adw.ApplicationWindow):
         self._setup_actions()
         self.entry_name.grab_focus()
 
-        self.file_light = FileRow(self, _('Light wallpaper'))
-        self.file_dark = FileRow(self, _('Dark wallpaper'))
+        self.file_light = FileRow(self, _('_Light wallpaper'))
+        self.file_light.set_use_underline(True)
+        self.file_dark = FileRow(self, _('_Dark wallpaper'))
+        self.file_dark.set_use_underline(True)
 
         self.input_rows.add(self.file_light)
         self.input_rows.add(self.file_dark)
