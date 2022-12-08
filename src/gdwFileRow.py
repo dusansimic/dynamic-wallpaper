@@ -8,8 +8,8 @@ class FileRow(Adw.ActionRow):
 
     wp_file = None
 
-    button_open = Gtk.Template.Child()
-    button_delete = Gtk.Template.Child()
+    button_location = Gtk.Template.Child()
+    button_location_content = Gtk.Template.Child()
 
     def __init__(self, parent, label, uid = None):
         Adw.ActionRow.__init__(self)
@@ -17,8 +17,7 @@ class FileRow(Adw.ActionRow):
         self._uid = uuid.uuid4() if uid == None else uid
 
         self.set_title(label)
-        self.button_open.set_action_name('win.{}_open'.format(self._uid))
-        self.button_delete.set_action_name('win.{}_delete'.format(self._uid))
+        self.button_location.set_action_name('win.{}_open'.format(self._uid))
 
         self._setup_actions(parent)
 
@@ -43,14 +42,8 @@ class FileRow(Adw.ActionRow):
         open_action.connect('activate', self._on_open_action)
         parent.add_action(open_action)
 
-        delete_action = Gio.SimpleAction.new('{}_delete'.format(self._uid), None)
-        delete_action.connect('activate', self._on_delete_action)
-        parent.add_action(delete_action)
-
     def _update_state(self):
-        self.button_open.set_visible(bool(not self.wp_file))
-        self.button_delete.set_visible(bool(self.wp_file))
-        self.set_subtitle(self.wp_file.fname if self.wp_file else '')
+        self.button_location_content.set_label(self.wp_file.fname if self.wp_file else _('(None)'))
 
     def _on_open_action(self, _action, _param):
         self._chooser.show()
@@ -66,10 +59,6 @@ class FileRow(Adw.ActionRow):
                 _, ext = os.path.splitext(path)
                 self.wp_file = Wallpaper(path, fname, ext)
                 self._update_state()
-
-    def _on_delete_action(self, _action, _param):
-        self.wp_file = None
-        self._update_state()
 
 class Wallpaper:
     def __init__(self, path, fname, ext):

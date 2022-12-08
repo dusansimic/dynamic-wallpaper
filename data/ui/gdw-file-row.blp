@@ -2,19 +2,13 @@ using Gtk 4.0;
 using Adw 1;
 
 template GdwFileRow : Adw.ActionRow {
-  Gtk.Button button_open {
-    icon-name: "document-open-symbolic";
+  activatable-widget: button_location;
+
+  Gtk.Button button_location {
     valign: center;
-
-    styles ["circular"]
+    child: Adw.ButtonContent button_location_content {
+      icon-name: "document-open-symbolic";
+      label: _('(None)');
+    };
   }
-
-  Gtk.Button button_delete {
-    visible: false;
-    icon-name: "user-trash-symbolic";
-    valign: center;
-
-    styles ["circular", "destructive-action"]
-  }
-
 }
