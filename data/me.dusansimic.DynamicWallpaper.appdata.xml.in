@@ -1,20 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-	<id>@app_id@</id>
+  <id>@app_id@</id>
   <provides>
     <id>@app_id@.desktop</id>
   </provides>
   <launchable type="desktop-id">@app_id@.desktop</launchable>
   <name>Dynamic Wallpaper</name>
   <developer_name>Dušan Simić</developer_name>
-  <summary>Dynamic wallpaper creator for GNOME 42 and beyond</summary>
-	<metadata_license>CC0-1.0</metadata_license>
-	<project_license>GPL-2.0</project_license>
+  <summary>Create light/dark wallpapers for GNOME 42 and beyond</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0</project_license>
   <url type="homepage">https://github.com/dusansimic/dynamic-wallpaper</url>
   <content_rating type="oars-1.1"/>
-	<description>
-	  <p>Dynamic wallpaper creator for GNOME 42 and beyond</p>
-	</description>
+  <description>
+    <p>
+      GNOME 42 introduced a dark style preference, and with it, support for
+      combined light/dark wallpaper pairs. Unfortunately, there's no easy way in
+      GNOME to add your own wallpaper pairs—until now!
+    </p>
+    <p>
+      Dynamic Wallpaper makes it easy to select a wallpaper to use with the
+      default style and a different wallpaper (e.g. a nighttime version) to use
+      with the dark style. Choose a name, save your wallpaper pair, then find it
+      in GNOME Settings → Appearance → Background.
+    </p>
+  </description>
   <screenshots>
     <screenshot type="default">
       <caption>Main window light theme</caption>
