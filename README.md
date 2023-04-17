@@ -2,7 +2,7 @@
 
 # Dynamic Wallpaper
 
-Dynamic wallpaper creator for Gnome 42
+Dynamic wallpaper creator for GNOME 42 and beyond
 
 🎨 Icon designed by [Rokwallaby](https://github.com/Rokwallaby).
 
@@ -11,9 +11,13 @@ Dynamic wallpaper creator for Gnome 42
 
 ## 💻 Installation
 
-Dynamic Wallpaper is still in development and only way to download it is via
-artifacts of [CI](https://github.com/dusansimic/dynamic-wallpaper/actions)
-builds. Download the latest artifact and install the flatpak file from the
+Dynamic Wallpaper is [available on Flathub](https://flathub.org/apps/details/me.dusansimic.DynamicWallpaper).
+
+<a href='https://flathub.org/apps/details/me.dusansimic.DynamicWallpaper'><img width='240' alt='Download on Flathub' src='https://flathub.org/assets/badges/flathub-badge-en.png'/></a>
+
+To download development snapshots, you can use the artifacts from
+[CI](https://github.com/dusansimic/dynamic-wallpaper/actions) builds. Download
+the latest artifact and install the flatpak file from the
 archive (`flatpak install dynamic-wallpaper.flatpak`).
 
 ## 🛠️ Dependencies
