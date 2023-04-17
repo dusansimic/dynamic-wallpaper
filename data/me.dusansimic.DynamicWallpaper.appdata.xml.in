@@ -7,13 +7,13 @@
   <launchable type="desktop-id">@app_id@.desktop</launchable>
   <name>Dynamic Wallpaper</name>
   <developer_name>Dušan Simić</developer_name>
-  <summary>Dynamic wallpaper creator for Gnome 42</summary>
+  <summary>Dynamic wallpaper creator for GNOME 42 and beyond</summary>
 	<metadata_license>CC0-1.0</metadata_license>
 	<project_license>GPL-2.0</project_license>
   <url type="homepage">https://github.com/dusansimic/dynamic-wallpaper</url>
   <content_rating type="oars-1.1"/>
 	<description>
-	  <p>Dynamic wallpaper creator for Gnome 42</p>
+	  <p>Dynamic wallpaper creator for GNOME 42 and beyond</p>
 	</description>
   <screenshots>
     <screenshot type="default">
