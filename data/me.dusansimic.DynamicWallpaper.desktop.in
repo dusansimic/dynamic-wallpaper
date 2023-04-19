@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=Dynamic Wallpaper
+Comment=Create light/dark wallpaper pairs
 Exec=@app_id@
 Icon=@app_id@
 Terminal=false
