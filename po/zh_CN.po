@@ -1,0 +1,208 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Dušan Simić <dusan.simic1810@gmail.com>
+# This file is distributed under the same license as the me.dusansimic.DynamicWallpaper package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: me.dusansimic.DynamicWallpaper 0.0.4\n"
+"Report-Msgid-Bugs-To: dusan.simic1810@gmail.com\n"
+"POT-Creation-Date: 2022-10-12 08:24+0200\n"
+"PO-Revision-Date: 2022-11-19 23:49+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: data/me.dusansimic.DynamicWallpaper.desktop.in:3
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:8 src/window.ui:13
+#: src/main.py:68
+msgid "Dynamic Wallpaper"
+msgstr "动态壁纸"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:9
+msgid "Dušan Simić"
+msgstr "Dušan Simić"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:10
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:16
+msgid "Dynamic wallpaper creator for Gnome 42"
+msgstr "GNOME 42 的动态壁纸创建器"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:20
+msgid "Main window light theme"
+msgstr "主窗口浅色主题"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:24
+msgid "Main window dark theme"
+msgstr "主窗口深色主题"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:35
+msgid "Bug fixes:"
+msgstr "修复bug:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:37
+msgid "Fix quit keyboard shortcut"
+msgstr "修复键盘关闭快捷键"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:39
+msgid "Added translations:"
+msgstr "添加翻译"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:41
+msgid "French"
+msgstr "法语"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:43
+msgid "Updated translations:"
+msgstr "更新翻译:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:45
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:62
+msgid "Turkish"
+msgstr "土耳其语"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:51
+msgid "Window is now draggable from anywhere."
+msgstr "窗口现在可以从任何地方拖动。"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:52
+msgid ""
+"Current icon is fixed to follow Gnome HIG (the one made by Rokwallaby "
+"already did but I edited it) and a new nightly icon is made by daudix-UFO "
+"based on the original one."
+msgstr ""
+"当前图标固定为Gnome HIG（Rokwallaby制作的图标，但我已经编辑了它），daudix "
+"UFO基于原始图标制作了一个新的夜间图标。"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:57
+msgid "Added and updated translations:"
+msgstr "添加并且更新的翻译:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:59
+msgid "Spanish"
+msgstr "西班牙语"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:60
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:72
+msgid "Persian"
+msgstr "波斯语"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:61
+msgid "Russian"
+msgstr "俄语"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:63
+msgid "Czech"
+msgstr "捷克语"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:69
+msgid "New translations and additional information in about dialog."
+msgstr "新翻译和关于会话的额外信息."
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:70
+msgid "Translated to:"
+msgstr "翻译为:"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:73
+msgid "Italian"
+msgstr "意大利语"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:74
+msgid "Dutch"
+msgstr "荷兰语"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:75
+msgid "Occitan"
+msgstr "奥克西坦语"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:76
+msgid "Brazilian Portugese"
+msgstr "巴西葡萄牙语"
+
+#: data/me.dusansimic.DynamicWallpaper.appdata.xml.in:82
+msgid "First release 🥳"
+msgstr "首次"
+
+#: src/window.ui:22
+msgid "Create"
+msgstr "创建"
+
+#: src/window.ui:23
+msgid "Create Dynamic Wallpaper"
+msgstr "创建动态壁纸"
+
+#: src/window.ui:55
+msgid "Name"
+msgstr "名字"
+
+#: src/window.ui:74
+msgid "_Keyboard Shortcuts"
+msgstr "_键盘快捷键"
+
+#: src/window.ui:78
+msgid "_About Dynamic Wallpaper"
+msgstr "_关于动态壁纸"
+
+#: src/gtk/help-overlay.ui:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr "常规"
+
+#: src/gtk/help-overlay.ui:14
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "显示快捷键"
+
+#: src/gtk/help-overlay.ui:20
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "退出"
+
+#: src/gdwFileRow.py:26
+msgid "PNG & JPEG"
+msgstr "PNG或JPEG"
+
+#: src/gdwFileRow.py:31
+msgid "Select wallpaper"
+msgstr "选择壁纸"
+
+#: src/main.py:78
+msgid "translator-credits"
+msgstr "翻译者贡献"
+
+#: src/window.py:41
+msgid "Light wallpaper"
+msgstr "浅色壁纸"
+
+#: src/window.py:42
+msgid "Dark wallpaper"
+msgstr "深色壁纸"
+
+#: src/window.py:56
+msgid "Wallpaper name not set"
+msgstr "未设置壁纸"
+
+#: src/window.py:59
+msgid "Wallpaper name cannot contain null or /"
+msgstr "壁纸名不能为空或包含 /"
+
+#: src/window.py:66
+msgid "Wallpaper with the same name already exists"
+msgstr "壁纸名已存在"
+
+#: src/window.py:73
+msgid "Light mode wallpaper not selected"
+msgstr "未选中浅色壁纸"
+
+#: src/window.py:76
+msgid "Dark mode wallpaper not selected"
+msgstr "未选中深色壁纸"
+
+#: src/window.py:91
+msgid "New dynamic wallpaper created"
+msgstr "已创建新的动态壁纸"
