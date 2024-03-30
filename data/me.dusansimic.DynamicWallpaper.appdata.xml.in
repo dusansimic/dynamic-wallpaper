@@ -11,6 +11,9 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0</project_license>
   <url type="homepage">https://github.com/dusansimic/dynamic-wallpaper</url>
+  <url type="bugtracker">https://github.com/dusansimic/dynamic-wallpaper/issues</url>
+  <url type="vcs-browser">https://github.com/dusansimic/dynamic-wallpaper</url>
+  <url type="translate">https://github.com/dusansimic/dynamic-wallpaper/tree/main/po</url>
   <content_rating type="oars-1.1"/>
   <description>
     <p>
