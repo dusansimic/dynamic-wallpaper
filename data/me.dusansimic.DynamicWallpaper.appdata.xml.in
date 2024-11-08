@@ -11,6 +11,9 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0</project_license>
   <url type="homepage">https://github.com/dusansimic/dynamic-wallpaper</url>
+  <url type="bugtracker">https://github.com/dusansimic/dynamic-wallpaper/issues</url>
+  <url type="vcs-browser">https://github.com/dusansimic/dynamic-wallpaper</url>
+  <url type="translate">https://github.com/dusansimic/dynamic-wallpaper/tree/main/po</url>
   <content_rating type="oars-1.1"/>
   <description>
     <p>
@@ -41,7 +44,7 @@
   </recommends>
   <releases>
     <release version="0.1.0" date="2022-10-13">
-      <description>
+      <description translate="no">
         <p>New stuff:</p>
         <ul>
           <li>New app design</li>
@@ -50,7 +53,7 @@
       </description>
     </release>
     <release version="0.0.4" date="2022-09-22">
-      <description>
+      <description translate="no">
         <p>Bug fixes:</p>
         <ul>
           <li>Fix quit keyboard shortcut</li>
@@ -66,7 +69,7 @@
       </description>
     </release>
     <release version="0.0.3" date="2022-06-22">
-      <description>
+      <description translate="no">
         <p>Window is now draggable from anywhere.</p>
         <p>
           Current icon is fixed to follow Gnome HIG (the one made by Rokwallaby
@@ -84,7 +87,7 @@
       </description>
     </release>
     <release version="0.0.2" date="2022-05-04">
-      <description>
+      <description translate="no">
         <p>New translations and additional information in about dialog.</p>
         <p>Translated to:</p>
         <ul>
@@ -97,7 +100,7 @@
       </description>
     </release>
     <release version="0.0.1" date="2022-04-25">
-      <description>
+      <description translate="no">
         <p>First release 🥳</p>
       </description>
     </release>
