@@ -22,9 +22,13 @@ class FileRow(Adw.ActionRow):
         self._setup_actions(parent)
 
         imgs_filter = Gtk.FileFilter()
-        imgs_filter.set_name(_('PNG & JPEG'))
+        imgs_filter.set_name(_('Images'))
         imgs_filter.add_mime_type('image/png')
         imgs_filter.add_mime_type('image/jpeg')
+        imgs_filter.add_mime_type('image/svg+xml')
+        imgs_filter.add_mime_type('image/webp')
+        imgs_filter.add_mime_type('image/jxl')
+        imgs_filter.add_mime_type('image/avif')
 
         self._chooser = Gtk.FileChooserNative.new(
             _('Select wallpaper'),
