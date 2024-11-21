@@ -64,9 +64,26 @@ class DynamicWallpaperWindow(Adw.ApplicationWindow):
         wall_dir = os.path.join(data_dir, 'backgrounds', wp_name)
         xml_path = os.path.join(data_dir, 'gnome-background-properties', '{}.xml'.format(wp_name))
         if any(map(os.path.exists, [wall_dir, xml_path])):
-            self.toast_overlay.add_toast(Adw.Toast.new(_('Wallpaper with the same name already exists')))
-            return
+            dialog = Adw.MessageDialog.new(self, 'Replace File?', 'Wallpaper ' +
+                            'with the same name already exists. ' +
+                            'Do you want to replace it?')
+            dialog.add_response('cancel', 'Cancel')
+            dialog.add_response('replace', 'Replace')
+            dialog.set_response_appearance('replace', Adw.ResponseAppearance.DESTRUCTIVE)
+            dialog.set_default_response('replace')
+            dialog.set_close_response('cancel')
 
+            def on_response(message_dialog, response):
+                match response:
+                    case 'cancel':
+                        return
+                    case 'replace':
+                        self._save_wallpaper(wp_name)
+
+            dialog.connect('response', on_response)
+            dialog.present()
+
+    def _save_wallpaper(self, wp_name):
         try:
             light_path = self.file_light.wp_file.path
             dark_path = self.file_dark.wp_file.path
